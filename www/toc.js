@@ -41,10 +41,6 @@ function slugifyHeading(text, seen) {
     return slug;
 }
 
-// Headings TOC tree — top-level (parent) headings only, no nested children.
-// Builds the full hierarchy first (so mixed heading levels, e.g. an h1 used
-// later in the doc after h2 sections, still nest correctly), then keeps only
-// the root-level nodes and drops their children.
 function buildTocTree(headingEls, maxLevel = MAX_SIDEBAR_TOC_LEVEL) {
     const filtered = headingEls.filter((h) => Number(h.tagName[1]) <= maxLevel);
     const items = filtered.length ? filtered.slice(1) : filtered;
