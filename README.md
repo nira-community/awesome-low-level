@@ -104,7 +104,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-However, the C concepts that matter in low-level programming go beyond the usual programming fundamentals. You'll also need to learn topics such as pointers, memory addresses, and manual memory management, which are essential for understanding how software interacts with hardware:
+However, the C concepts that matter in low-level programming go beyond the usual programming fundamentals. You'll also need to learn topics such as [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), memory addresses, and manual memory management, which are essential for understanding how software interacts with hardware:
 
 ```c
 int *ages = malloc(5 * sizeof(int));
@@ -223,7 +223,6 @@ Learning low-level programming isn't always easy. There will be times where you'
 If you want a broader idea of what learning programming actually looks like, we highly recommend checking out the following article:
  
 - [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html): A classic article that sets realistic expectations about learning programming and explains why becoming proficient takes time, patience, and consistent practice.
-- [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming))
 
 ### Project-Based Learning
  
