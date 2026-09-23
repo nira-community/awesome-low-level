@@ -134,21 +134,21 @@ Pick whatever works best for you and learn at your own pace. But generally, we r
 
 ##### 1. Start with Basics
 
-- **[r/learnprogramming wiki](https://www.reddit.com/r/learnprogramming/wiki/faq/#wiki_getting_started)**
-
 If you've never programmed before, this is a good place to start. It gives you a beginner-friendly introduction and helps answer some common questions about getting into programming.
+
+- **[r/learnprogramming wiki](https://www.reddit.com/r/learnprogramming/wiki/faq/#wiki_getting_started)**
 
 ##### 2. Build your Computer Science Foundation 
 
-- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
-
 Once you're comfortable with the basics, CS50 is a good next step. It helps you build a strong understanding of programming and computer science while also teaching you how to think algorithmically and solve programming problems more efficiently.
+
+- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
 
 ##### 3. Go Deeper with a Structured Path
 
-- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
-
 After CS50, you can explore more computer science topics based on your interests and goals. If you're looking for a more complete and structured way to learn by yourself, OSSU is one of the best options you can go with. It provides a full computer science curriculum covering programming, mathematics, computer systems, theory, and many other important topics.
+
+- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
 
 The resources above are enough to get you started, but they are not the only options. Below, you'll find some other resources that are also worth checking out depending on what you want to learn.
 

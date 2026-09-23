@@ -89,7 +89,7 @@ function renderTocTree(nodes, { linkPrefix = "", onNavigate = null } = {}) {
     return ul;
 }
 
-// Mobile sidebar toggle
+// mobile sidebar toggle
 function initPageChrome() {
     const sidebarEl = document.getElementById("sidebar");
     const navToggle = document.getElementById("navToggle");
