@@ -205,7 +205,7 @@
     }
 
     function enableWikiPreviews() {
-        contentEl.querySelectorAll('a[href*="wikipedia.org/wiki/"]').forEach((link) => {
+        contentEl.querySelectorAll('p a[href*="wikipedia.org/wiki/"]').forEach((link) => {
             link.classList.add("wiki-term");
             link.addEventListener("mouseenter", () => {
                 wikiActiveLink = link;
