@@ -104,7 +104,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-However, the C concepts that matter in low-level programming go beyond the usual programming fundamentals. You'll also need to learn topics such as [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), memory addresses, and manual memory management, which are essential for understanding how software interacts with hardware:
+However, the C concepts that matter in low-level programming go beyond the usual programming fundamentals. You'll also need to learn topics such as [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), [memory addresses](https://en.wikipedia.org/wiki/Memory_address), and [manual memory management](https://en.wikipedia.org/wiki/Manual_memory_management), which are essential for understanding how software interacts with hardware:
 
 ```c
 int *ages = malloc(5 * sizeof(int));
@@ -167,7 +167,7 @@ If you've already worked with low-level concepts before, you can skip the beginn
 
 If you already have experience with languages like Python, Java, or C#, you probably already have a good understanding of programming fundamentals. That gives you a good head start. But low-level programming is a bit different, so don't approach everything the exact same way.
 
-When learning low-level programming, try not to rely too much on an object-oriented way of thinking. Instead, focus on understanding how data is stored, how memory is managed, how control flow works, and how programs interact with the hardware underneath. Depending on what you're learning, you will come across programming styles that are more procedural, function-based, or data-oriented compared to what you might be used to from high-level languages.
+When learning low-level programming, try not to rely too much on an object-oriented way of thinking. Instead, focus on understanding how data is stored, how memory is managed, how control flow works, and how programs interact with the hardware underneath. Depending on what you're learning, you will come across programming styles that are more [procedural](https://en.wikipedia.org/wiki/Procedural_programming), [function-based](https://en.wikipedia.org/wiki/Functional_programming), or data-oriented compared to what you might be used to from high-level languages.
 
 For example, the same task can be written using OOP in Java and a more procedural style in C.
 
@@ -256,9 +256,9 @@ Try not to immediately ask AI to write the entire program or solve the problem f
   <img width="4139" alt="Untitled-2026-08-25-2028" src="https://github.com/user-attachments/assets/8c9d045b-edb1-46d5-91dd-558e0dd53737" />
 </p>
 
-The diagram shows the different layers between the programmer and the computer's hardware. At the very bottom is the hardware itself, the physical parts that actually execute instructions and do the computations. Above that, you have machine code, assembly, and programming languages. As you move higher up the stack, more of the hardware complexity is hidden behind layers of abstraction, which makes programming easier but also gives you less direct control over what's happening underneath.
+The diagram shows the different layers between the programmer and the computer's hardware. At the very bottom is the hardware itself, the physical parts that actually execute instructions and do the computations. Above that, you have [machine code](https://en.wikipedia.org/wiki/Machine_code), [assembly](https://en.wikipedia.org/wiki/Assembly_language), and programming languages. As you move higher up the stack, more of the hardware complexity is hidden behind layers of abstraction, which makes programming easier but also gives you less direct control over what's happening underneath.
 
-Low-level programming is about working closer to the machine and understanding what's actually happening across these layers. Instead of relying too much on abstractions, you work more directly with things like memory, the CPU, and other hardware resources.
+[Low-level programming](https://en.wikipedia.org/wiki/Low-level_programming_language) is about working closer to the machine and understanding what's actually happening across these layers. Instead of relying too much on abstractions, you work more directly with things like memory, the CPU, and other hardware resources.
 
 That's why low-level programming is often described as being "close to the hardware." Languages like Assembly and C are classic examples of low-level programming languages. Modern languages like C++, Rust, Zig, and Odin are also widely used for low-level and systems programming, while giving you different trade-offs between control, safety, and abstraction.
 
@@ -272,7 +272,7 @@ A common misconception is that low-level programming and systems programming are
 
 Low-level programming is more about how closely your code interacts with the hardware. It focuses on things like memory, CPU instructions, pointers, registers, and data representation. Basically, it's about understanding and controlling what happens underneath the abstractions provided by higher-level languages.
 
-Systems programming, on the other hand, is more about the type of software you're building. It involves creating software that supports, manages, or provides services for other software. Examples include operating systems, compilers, databases, device drivers, runtimes, networking software, and servers.
+[Systems programming](https://en.wikipedia.org/wiki/Systems_programming), on the other hand, is more about the type of software you're building. It involves creating software that supports, manages, or provides services for other software. Examples include operating systems, compilers, databases, device drivers, runtimes, networking software, and servers.
 
 Because many system-level applications need direct access to hardware and efficient resource management, these two areas often overlap. For example, writing an operating system kernel in C is both systems programming and low-level programming. However, not all systems programming has to be low-level. Modern languages can also be used to build system software while providing more abstraction, safety, or convenience.
 
@@ -284,7 +284,7 @@ Because many system-level applications need direct access to hardware and effici
 
 ## Why Learning C is Important ?
  
-If you're interested in low-level programming, C is one of the best places to start. Despite being over 50 years old, it remains one of the most important and widely used programming languages in the world. Many of the ideas, tools, and technologies that modern programmers use today have their roots in C.
+If you're interested in low-level programming, [C](https://en.wikipedia.org/wiki/C_(programming_language)) is one of the best places to start. Despite being over 50 years old, it remains one of the most important and widely used programming languages in the world. Many of the ideas, tools, and technologies that modern programmers use today have their roots in C.
 
 Some of the reasons C is still so important include:
  
@@ -292,7 +292,7 @@ Some of the reasons C is still so important include:
 - **C is efficient and lightweight**. It allows programmers to write software that uses very little memory and processing power, making it ideal for performance-critical and resource-constrained systems.
 - **C is flexible**. Unlike many modern languages, C doesn't force you into a specific programming style or paradigm. It gives you the freedom to structure programs in whatever way makes the most sense for the problem you're solving.
 - **C imposes very few restrictions on programming style**. Unlike many higher-level languages, it does not strongly enforce a particular programming paradigm or ideology. As a result, there are very few kinds of programs that cannot be written in C.
-- **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Languages such as Python, Ruby, PHP, and Perl rely on runtimes and implementations that are largely written in C or C++.
+- **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Languages such as Python, Ruby, PHP, and Perl rely on [runtimes and implementations that are largely written in C](https://en.wikipedia.org/wiki/C_(programming_language)#Related_languages) or C++.
  
 One of the biggest strengths of C is that it teaches you to be careful.
 The language gives you a lot of power and freedom, but with that freedom comes responsibility. Small mistakes can lead to serious problems if you're not paying attention.
@@ -301,7 +301,7 @@ For example, you may encounter issues such as:
 - Invalid memory access
 - Buffer overflows
 - Memory leaks
-- Undefined behavior 
+- [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior#C_and_C++) 
 - Pointer related bugs
 
 Learning to avoid these problems forces you to think more carefully about how memory, data, and system resources are being used.
