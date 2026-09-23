@@ -316,9 +316,7 @@ Another reason C remains valuable is its influence on the programming world. Man
  
 ## C vs C++ in Low-Level Programming
 
-- **[C & C++ Siblings, by Bjarne Stroustrup](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209.)**
-
-Stroustrup explains that modern C and modern C++ are better understood as sibling languages rather than one simply being a newer version of the other. Both languages evolved from a common ancestor, K&R C, but they later developed in different directions.
+[Stroustrup explains that modern C and modern C++ are better understood as sibling languages](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209) rather than one simply being a newer version of the other. Both languages evolved from a common ancestor, K&R C, but they later developed in different directions.
 
 This is important because C++ did not simply inherit modern versions of C such as C99 or C11. While the two languages still share a lot of concepts and historical overlap, they have evolved separately. This is also why modern C and modern C++ can sometimes behave quite differently despite looking very similar.
 
