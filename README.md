@@ -316,23 +316,29 @@ Another reason C remains valuable is its influence on the programming world. Man
  
 ## C vs C++ in Low-Level Programming
 
-One of the most common questions beginners ask is: Should I learn C or C++ for low-level programming? You'll often hear people say "learn C before C++." While there's some truth behind that advice, it doesn't mean C++ is the wrong choice.
+- **[C & C++ Siblings, by Bjarne Stroustrup](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209.)**
 
-The reason many people recommend starting with C is that it exposes more of what's happening under the hood. C provides very few abstractions, so you're often forced to understand concepts like memory, pointers, strings, and data representation instead of relying on language features to handle them for you.
+Stroustrup explains that modern C and modern C++ are better understood as sibling languages rather than one simply being a newer version of the other. Both languages evolved from a common ancestor, K&R C, but they later developed in different directions.
 
-C++, on the other hand, offers many additional abstractions and tools that can make development easier. Features like classes, templates, and the standard library allow you to build larger and more complex software with less effort. The trade-off is that it's sometimes possible to use these features without fully understanding what's happening underneath.
+This is important because C++ did not simply inherit modern versions of C such as C99 or C11. While the two languages still share a lot of concepts and historical overlap, they have evolved separately. This is also why modern C and modern C++ can sometimes behave quite differently despite looking very similar.
 
-That said, using C++ doesn't automatically mean you're programming at a higher level. One of C++'s strengths is that it lets you choose how much abstraction you want. You can write code that's very close to C when you need direct control, or take advantage of higher-level features when they make sense.
- 
+The idea of treating them as sibling languages is also useful when deciding which one to learn. You'll often hear people say "learn C before C++," especially when talking about low-level or systems programming. The reasoning behind this is that C exposes more of what is happening under the hood.
+
+C provides relatively few abstractions, so you're often forced to understand things like memory, pointers, strings, and data representation instead of relying on language features to handle them for you. Because of this, C is commonly used in low-level and systems programming, and learning it can be a good way to get familiar with some of the fundamental concepts behind how programs actually work.
+
+C++, on the other hand, provides many more abstractions and tools that can make development easier. Features like classes, templates, and the standard library allow you to build larger and more complex software without having to implement everything yourself. The trade-off is that it is possible to use these features without fully understanding what is happening underneath.
+
+That doesn't mean C++ automatically means you're programming at a higher level. One of the strengths of C++ is that it gives you a choice in how much abstraction you want to use. You can write code that is very close to C when you need direct control, or take advantage of higher-level features when they make sense.
+
 > Both C and C++ are powerful languages that are widely used for low-level and systems programming. Neither one is inherently better for every situation.
- 
-So, do you have to learn C before learning C++?
+
+So, do you have to learn C before learning C++ ?
 
 Not at all.
 
-If C++ interests you more, it's perfectly reasonable to start there. You don't need to master C first before touching C++. Just make sure you take the time to understand the fundamental concepts that C++ is built on, especially topics like memory, pointers, data layout, and how programs interact with the system.
+If C++ interests you more, it's perfectly reasonable to start there. You don't need to master C first before touching C++. Just make sure you take the time to understand the fundamental concepts that C++ is built on, especially things like memory, pointers, data layout, and how programs interact with the system.
 
-Likewise, starting with C and moving to C++ later is also a great path. Many developers find that learning C first makes it easier to appreciate what C++ abstractions are actually doing behind the scenes.
+Likewise, starting with C and moving to C++ later is also a reasonable path. Learning C first can make it easier to understand what some of the abstractions in C++ are actually doing behind the scenes. But there is no requirement that you follow this path if C++ is what you actually want to learn.
  
 ---
 
