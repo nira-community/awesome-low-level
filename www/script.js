@@ -140,6 +140,85 @@
         updateActive();
     }
 
+    // --- Wikipedia hover preview ---
+    const wikiCache = new Map();
+    let wikiPreviewEl = null;
+    let wikiHoverTimer = null;
+    let wikiActiveLink = null;
+
+    function getWikiPreviewEl() {
+        if (!wikiPreviewEl) {
+            wikiPreviewEl = document.createElement("div");
+            wikiPreviewEl.className = "wiki-preview";
+            document.body.appendChild(wikiPreviewEl);
+            wikiPreviewEl.addEventListener("mouseenter", () => clearTimeout(wikiHoverTimer));
+            wikiPreviewEl.addEventListener("mouseleave", hideWikiPreview);
+        }
+        return wikiPreviewEl;
+    }
+
+    function hideWikiPreview() {
+        clearTimeout(wikiHoverTimer);
+        wikiActiveLink = null;
+        if (wikiPreviewEl) wikiPreviewEl.classList.remove("show");
+    }
+
+    function positionWikiPreview(link) {
+        const box = getWikiPreviewEl();
+        const rect = link.getBoundingClientRect();
+        box.style.top = `${rect.bottom + window.scrollY + 8}px`;
+        const maxLeft = window.scrollX + document.documentElement.clientWidth - 320;
+        box.style.left = `${Math.max(8, Math.min(rect.left + window.scrollX, maxLeft))}px`;
+    }
+
+    function renderWikiPreview(box, data) {
+        const thumb = data.thumbnail ? `<img class="wiki-preview-thumb" src="${data.thumbnail.source}" alt="">` : "";
+        box.innerHTML = `
+        <div class="wiki-preview-body">
+            ${thumb}
+            <div>
+                <p class="wiki-preview-title">${escapeHtml(data.title || "")}</p>
+                <p class="wiki-preview-extract">${escapeHtml(data.extract || "")}</p>
+            </div>
+        </div>`;
+    }
+
+    async function showWikiPreview(link) {
+        const title = decodeURIComponent(link.pathname.split("/wiki/")[1] || "");
+        if (!title) return;
+        const box = getWikiPreviewEl();
+        positionWikiPreview(link);
+        box.innerHTML = `<p class="wiki-preview-status">Loading…</p>`;
+        box.classList.add("show");
+
+        if (wikiCache.has(title)) return renderWikiPreview(box, wikiCache.get(title));
+
+        try {
+            const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`);
+            if (!res.ok) throw new Error("Not found");
+            const data = await res.json();
+            wikiCache.set(title, data);
+            if (wikiActiveLink === link) renderWikiPreview(box, data);
+        } catch {
+            if (wikiActiveLink === link) box.innerHTML = `<p class="wiki-preview-status">No preview available.</p>`;
+        }
+    }
+
+    function enableWikiPreviews() {
+        contentEl.querySelectorAll('a[href*="wikipedia.org/wiki/"]').forEach((link) => {
+            link.classList.add("wiki-term");
+            link.addEventListener("mouseenter", () => {
+                wikiActiveLink = link;
+                clearTimeout(wikiHoverTimer);
+                wikiHoverTimer = setTimeout(() => showWikiPreview(link), 300);
+            });
+            link.addEventListener("mouseleave", () => {
+                clearTimeout(wikiHoverTimer);
+                wikiHoverTimer = setTimeout(hideWikiPreview, 200);
+            });
+        });
+    }
+
     function render(markdown) {
         contentEl.innerHTML = marked.parse(markdown, { gfm: true, breaks: false });
         stripManualToc();
@@ -150,6 +229,7 @@
         highlightCodeBlocks();
         buildToc(headings);
         setupScrollSpy();
+        enableWikiPreviews();
     }
 
     async function loadReadme() {

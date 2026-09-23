@@ -104,7 +104,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-However, the C concepts that matter in low-level programming go beyond the usual programming fundamentals. You'll also need to learn topics such as pointers, memory addresses, and manual memory management, which are essential for understanding how software interacts with hardware:
+However, the C concepts that matter in low-level programming go beyond the usual programming fundamentals. You'll also need to learn topics such as [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), memory addresses, and manual memory management, which are essential for understanding how software interacts with hardware:
 
 ```c
 int *ages = malloc(5 * sizeof(int));

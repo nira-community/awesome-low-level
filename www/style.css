@@ -510,6 +510,59 @@ a {
     font-weight: 500;
 }
 
+.wiki-preview {
+    position: absolute;
+    z-index: 60;
+    width: 300px;
+    max-width: calc(100vw - 16px);
+    background: var(--bg-content);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px var(--shadow);
+    padding: 12px 14px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    pointer-events: none;
+}
+
+.wiki-preview.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.wiki-preview-body {
+    display: flex;
+    gap: 10px;
+}
+
+.wiki-preview-thumb {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: none;
+}
+
+.wiki-preview-title {
+    margin: 0 0 4px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.wiki-preview-extract,
+.wiki-preview-status {
+    margin: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
     .mobile-nav-toggle {
