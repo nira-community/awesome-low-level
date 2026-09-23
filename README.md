@@ -372,6 +372,7 @@ Learn how computers store and represent information, how the CPU executes instru
 - **[Exploring How Computers Work](https://www.youtube.com/watch?v=QZwneRb-zqA)**
 - **[Computer Systems: A Programmer's Perspective](https://www.amazon.com/dp/9332573905/)**
 - **[The Hidden Language of Computer Hardware and Software](https://charlespetzold.com/code/)**
+- **[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)**
  
 ## 3. C Programming
 
