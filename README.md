@@ -292,17 +292,9 @@ Some of the reasons C is still so important include:
 - **C is efficient and lightweight**. It allows programmers to write software that uses very little memory and processing power, making it ideal for performance-critical and resource-constrained systems.
 - **C is flexible**. Unlike many modern languages, C doesn't force you into a specific programming style or paradigm. It gives you the freedom to structure programs in whatever way makes the most sense for the problem you're solving.
 - **C imposes very few restrictions on programming style**. Unlike many higher-level languages, it does not strongly enforce a particular programming paradigm or ideology. As a result, there are very few kinds of programs that cannot be written in C.
-- **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Languages such as Python, Ruby, PHP, and Perl rely on [runtimes and implementations that are largely written in C](https://en.wikipedia.org/wiki/C_(programming_language)#Related_languages) or C++.
+- **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Languages such as Python, Ruby, PHP, and Perl rely on runtimes and implementations that are largely written in C or C++.
  
-One of the biggest strengths of C is that it teaches you to be careful.
-The language gives you a lot of power and freedom, but with that freedom comes responsibility. Small mistakes can lead to serious problems if you're not paying attention.
-For example, you may encounter issues such as:
-
-- [Invalid memory access](https://en.wikipedia.org/wiki/Out_of_memory)
-- [Buffer overflows](https://en.wikipedia.org/wiki/Buffer_overflow)
-- [Memory leaks](https://en.wikipedia.org/wiki/Memory_leak)
-- [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior) 
-- [Pointer related bugs](https://en.wikipedia.org/wiki/Stale_pointer_bug)
+One of the biggest strengths of C is that it teaches you to be careful. The language gives you a lot of power and freedom, but with that freedom comes responsibility. Small mistakes can lead to serious problems if you're not paying attention. For example, you may encounter issues such as [invalid memory access](https://en.wikipedia.org/wiki/Out_of_memory), [buffer overflows](https://en.wikipedia.org/wiki/Buffer_overflow), [memory leaks](https://en.wikipedia.org/wiki/Memory_leak), [undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior) and [pointer related bugs](https://en.wikipedia.org/wiki/Stale_pointer_bug).
 
 Learning to avoid these problems forces you to think more carefully about how memory, data, and system resources are being used.
  
