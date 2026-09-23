@@ -222,7 +222,7 @@ Learning low-level programming isn't always easy. There will be times where you'
 
 If you want a broader idea of what learning programming actually looks like, we highly recommend checking out the following article:
  
-- [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html): A classic article that sets realistic expectations about learning programming and explains why becoming proficient takes time, patience, and consistent practice.
+- **[Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html)**: A classic article that sets realistic expectations about learning programming and explains why becoming proficient takes time, patience, and consistent practice.
 
 ### Project-Based Learning
  
@@ -256,7 +256,7 @@ Try not to immediately ask AI to write the entire program or solve the problem f
   <img width="4139" alt="Untitled-2026-08-25-2028" src="https://github.com/user-attachments/assets/8c9d045b-edb1-46d5-91dd-558e0dd53737" />
 </p>
 
-The diagram shows the different layers between the programmer and the computer's hardware. At the very bottom is the hardware itself, the physical parts that actually execute instructions and do the computations. Above that, you have [machine code](https://en.wikipedia.org/wiki/Machine_code), [assembly](https://en.wikipedia.org/wiki/Assembly_language), and programming languages. As you move higher up the stack, more of the hardware complexity is hidden behind layers of abstraction, which makes programming easier but also gives you less direct control over what's happening underneath.
+The diagram shows the different layers between the programmer and the computer's hardware. At the very bottom is the hardware itself, the physical parts that actually execute instructions and do the computations. Above that, you have [machine code](https://en.wikipedia.org/wiki/Machine_code), assembly, and programming languages. As you move higher up the stack, more of the hardware complexity is hidden behind layers of abstraction, which makes programming easier but also gives you less direct control over what's happening underneath.
 
 [Low-level programming](https://en.wikipedia.org/wiki/Low-level_programming_language) is about working closer to the machine and understanding what's actually happening across these layers. Instead of relying too much on abstractions, you work more directly with things like memory, the CPU, and other hardware resources.
 
@@ -298,11 +298,11 @@ One of the biggest strengths of C is that it teaches you to be careful.
 The language gives you a lot of power and freedom, but with that freedom comes responsibility. Small mistakes can lead to serious problems if you're not paying attention.
 For example, you may encounter issues such as:
 
-- Invalid memory access
-- Buffer overflows
-- Memory leaks
-- [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior#C_and_C++) 
-- Pointer related bugs
+- [Invalid memory access](https://en.wikipedia.org/wiki/Out_of_memory)
+- [Buffer overflows](https://en.wikipedia.org/wiki/Buffer_overflow)
+- [Memory leaks](https://en.wikipedia.org/wiki/Memory_leak)
+- [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior) 
+- [Pointer related bugs](https://en.wikipedia.org/wiki/Stale_pointer_bug)
 
 Learning to avoid these problems forces you to think more carefully about how memory, data, and system resources are being used.
  
@@ -360,7 +360,7 @@ Depending on the topic, some sections might put a book before an official websit
  
 You don't need to have an in-depth knowledge of electronics before you start learning C or low-level programming. A basic understanding is more than enough.
 
-The goal here isn't to become an electrical engineer. Instead, it's to learn some fundamental concepts that can help you understand how computers work at the hardware level. Understanding things like voltage, logic gates, and simple digital circuits can make it much easier to understand what the computer is actually doing underneath.
+The goal here isn't to become an electrical engineer. Instead, it's to learn some fundamental concepts that can help you understand how computers work at the hardware level. Understanding things like voltage, [logic gates](https://en.wikipedia.org/wiki/Logic_gate), and simple digital circuits can make it much easier to understand what the computer is actually doing underneath.
 
 - **[MIT OpenCourseWare: Circuits & Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)** 
 - **[Nand2Tetris](https://www.nand2tetris.org/)**
@@ -383,7 +383,7 @@ Learn how computers store and represent information, how the CPU executes instru
  
 Once you've built a basic understanding of how computers work, it's time to start learning C. While learning pay attention to things like pointers, arrays, structs, memory allocation, stack and heap memory, data representation, and bitwise operations. These topics are an important foundation for low-level programming.
 
-As you learn, try to look beyond what your code does and start asking how it actually works. Where is the data stored? What happens in memory when a function is called? How does the program access and modify data? Developing this mindset will help you get much more out of C instead of just learning the syntax of the language.
+As you learn, try to look beyond what your code does and start asking how it actually works. Where is the data stored ? What happens in memory when a function is called ? How does the program access and modify data? Developing this mindset will help you get much more out of C instead of just learning the syntax of the language.
 
 - **[The ANSI C Book](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628)**
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**
