@@ -134,19 +134,19 @@ Pick whatever works best for you and learn at your own pace. But generally, we r
 
 ##### 1. Start with Basics
 
-**[r/learnprogramming wiki](https://www.reddit.com/r/learnprogramming/wiki/faq/#wiki_getting_started)**
+- **[r/learnprogramming wiki](https://www.reddit.com/r/learnprogramming/wiki/faq/#wiki_getting_started)**
 
 If you've never programmed before, this is a good place to start. It gives you a beginner-friendly introduction and helps answer some common questions about getting into programming.
 
 ##### 2. Build your Computer Science Foundation 
 
-**[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
+- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
 
 Once you're comfortable with the basics, CS50 is a good next step. It helps you build a strong understanding of programming and computer science while also teaching you how to think algorithmically and solve programming problems more efficiently.
 
 ##### 3. Go Deeper with a Structured Path
 
-**[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
+- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
 
 After CS50, you can explore more computer science topics based on your interests and goals. If you're looking for a more complete and structured way to learn by yourself, OSSU is one of the best options you can go with. It provides a full computer science curriculum covering programming, mathematics, computer systems, theory, and many other important topics.
 
@@ -364,7 +364,7 @@ Depending on the topic, some sections might put a book before an official websit
  
 You don't need to have an in-depth knowledge of electronics before you start learning C or low-level programming. A basic understanding is more than enough.
 
-The goal here isn't to become an electrical engineer. Instead, it's to learn some fundamental concepts that can help you understand how computers work at the hardware level. Understanding things like voltage, [logic gates](https://en.wikipedia.org/wiki/Logic_gate), and simple digital circuits can make it much easier to understand what the computer is actually doing underneath.
+The goal here isn't to become an electrical engineer. Instead, it's to learn some fundamental concepts that can help you understand how computers work at the hardware level. Understanding things like voltage, logic gates, and simple digital circuits can make it much easier to understand what the computer is actually doing underneath.
 
 - **[MIT OpenCourseWare: Circuits & Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)** 
 - **[Nand2Tetris](https://www.nand2tetris.org/)**

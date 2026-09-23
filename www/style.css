@@ -13,6 +13,20 @@
     --font-sans: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --sidebar-w: 280px;
     --brand-ink: #000000;
+
+    /* font size */
+    --fs-2xs: 0.75rem;
+    --fs-xs: 0.8125rem;
+    --fs-s: 0.875rem;
+    --fs-toc: 0.9375rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.375rem;
+    --fs-lg-mobile: 1.3125rem;
+    --fs-xl: 1.75rem;
+    --fs-2xl-mobile: 1.875rem;
+    --fs-2xl: 2.625rem;
+
 }
 
 *,
@@ -30,13 +44,14 @@ body {
     background: var(--bg);
     color: var(--ink-soft);
     font-family: var(--font-sans);
-    font-size: 17px;
+    font-size: var(--fs-sm);
     line-height: 1.75;
     letter-spacing: 0.015rem;
     -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
@@ -56,7 +71,7 @@ a {
     outline-offset: 2px;
 }
 
-/* ---------- App shell ---------- */
+/* app shell */
 .app-shell {
     display: flex;
     align-items: stretch;
@@ -69,7 +84,7 @@ a {
     margin-left: var(--sidebar-w);
 }
 
-/* ---------- Sidebar ---------- */
+/* sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -97,14 +112,14 @@ a {
     display: block;
     font-family: var(--font-sans);
     font-weight: 600;
-    font-size: 17px;
+    font-size: var(--fs-sm);
     letter-spacing: -0.01em;
 }
 
 .sidebar-brand-tag {
     display: block;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: var(--fs-s);
     line-height: 1.4;
     opacity: 0.85;
 }
@@ -117,7 +132,7 @@ a {
 
 .sidebar-label {
     font-family: var(--font-sans);
-    font-size: 12px;
+    font-size: var(--fs-2xs);
     color: var(--muted);
     margin: 22px 10px 8px;
 }
@@ -137,7 +152,7 @@ a {
 }
 
 .source-link {
-    font-size: 12.5px;
+    font-size: var(--fs-2xs);
     color: var(--ink-soft);
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -151,7 +166,7 @@ a {
     border-bottom-color: #ffffff;
 }
 
-/* ---------- Mobile nav toggle + scrim ---------- */
+/* mobile nav toggle */
 .mobile-nav-toggle {
     display: none;
     position: fixed;
@@ -192,7 +207,7 @@ a {
     display: block;
 }
 
-/* ---------- TOC tree ---------- */
+/* TOC tree */
 #toc>ul,
 .community-list {
     list-style: none;
@@ -210,7 +225,7 @@ a {
     border-radius: 5px;
     color: var(--ink-soft);
     text-decoration: none;
-    font-size: 15px;
+    font-size: var(--fs-toc);
     line-height: 1.45;
     transition: color 0.15s ease, background-color 0.15s ease;
 }
@@ -249,11 +264,11 @@ a {
 }
 
 .toc-children a {
-    font-size: 14px;
+    font-size: var(--fs-s);
 }
 
 .toc-children .toc-children a {
-    font-size: 13.5px;
+    font-size: var(--fs-xs);
 }
 
 .toc .status {
@@ -309,7 +324,7 @@ a {
     }
 }
 
-/* ---------- Center content ---------- */
+/* center content */
 .content {
     max-width: 960px;
     width: 100%;
@@ -320,14 +335,14 @@ a {
 
 .status,
 .error {
-    font-family: var(--font-mono);
-    font-size: 13px;
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
     color: var(--muted);
 }
 
 .error button {
     font-family: var(--font-sans);
-    font-size: 13px;
+    font-size: var(--fs-xs);
     border: 1px solid var(--line);
     background: var(--bg-content);
     color: var(--ink);
@@ -356,7 +371,7 @@ a {
 }
 
 .content h1 {
-    font-size: 28px;
+    font-size: var(--fs-xl);
     margin: 48px 0 16px;
     padding-top: 24px;
     border-top: 1px solid var(--line);
@@ -366,34 +381,34 @@ a {
     margin-top: 0;
     padding-top: 0;
     border-top: none;
-    font-size: 42px;
+    font-size: var(--fs-2xl);
 }
 
 .content h2 {
-    font-size: 22px;
+    font-size: var(--fs-lg);
     margin: 36px 0 12px;
 }
 
 .content h3 {
-    font-size: 18px;
+    font-size: var(--fs-md);
     margin: 28px 0 10px;
     color: var(--ink);
 }
 
 .content h4 {
-    font-size: 16px;
+    font-size: var(--fs-sm);
     margin: 22px 0 8px;
     color: var(--ink);
 }
 
 .content h5 {
-    font-size: 14px;
+    font-size: var(--fs-s);
     margin: 18px 0 6px;
     color: var(--ink);
 }
 
 .content h6 {
-    font-size: 13px;
+    font-size: var(--fs-xs);
     margin: 16px 0 6px;
     color: var(--muted);
     text-transform: uppercase;
@@ -417,7 +432,7 @@ a {
     padding: 2px 16px;
     border-left: 2px solid var(--accent);
     color: var(--ink-soft);
-    font-size: 16px;
+    font-size: var(--fs-sm);
     background: var(--accent-soft);
     border-radius: 0 4px 4px 0;
 }
@@ -452,6 +467,23 @@ a {
 
 .content a:hover {
     opacity: 0.75;
+}
+
+/* paragraph-only links: white text, underline, invert on hover */
+.content p a {
+    color: #ffffff;
+    border-bottom: none;
+    text-decoration: 2px underline;
+    text-underline-offset: 4px;
+    opacity: 1;
+    transition: color 0.15s ease, background-color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.content p a:hover {
+    color: #0f1214;
+    background-color: #ffffff;
+    text-decoration-color: #ffffff;
+    opacity: 1;
 }
 
 .content code {
@@ -493,7 +525,7 @@ a {
     overflow-x: auto;
     border-collapse: collapse;
     margin: 0 0 20px;
-    font-size: 14px;
+    font-size: var(--fs-s);
     -webkit-overflow-scrolling: touch;
 }
 
@@ -510,6 +542,7 @@ a {
     font-weight: 500;
 }
 
+/* wikipedia hover preview */
 .wiki-preview {
     position: absolute;
     z-index: 60;
@@ -522,7 +555,6 @@ a {
     padding: 12px 14px;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4px);
     transition: opacity 0.15s ease, transform 0.15s ease;
     pointer-events: none;
 }
@@ -530,7 +562,6 @@ a {
 .wiki-preview.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
     pointer-events: auto;
 }
 
@@ -551,14 +582,14 @@ a {
     margin: 0 0 4px;
     font-family: var(--font-sans);
     font-weight: 600;
-    font-size: 13px;
+    font-size: var(--fs-xs);
     color: #ffffff;
 }
 
 .wiki-preview-extract,
 .wiki-preview-status {
     margin: 0;
-    font-size: 12.5px;
+    font-size: var(--fs-xs);
     line-height: 1.5;
     color: var(--ink-soft);
     display: -webkit-box;
@@ -567,8 +598,9 @@ a {
     overflow: hidden;
 }
 
-/* ---------- Responsive ---------- */
+/* responsive */
 @media (max-width: 900px) {
+
     .mobile-nav-toggle {
         display: flex;
     }
@@ -613,6 +645,7 @@ a {
 }
 
 @media (max-width: 480px) {
+
     .sidebar-brand {
         padding: 18px 20px 18px 64px;
     }
@@ -627,20 +660,20 @@ a {
     }
 
     .content h1 {
-        font-size: 21px;
+        font-size: var(--fs-lg-mobile);
         margin-top: 36px;
     }
 
     .content>h1:first-child {
-        font-size: 30px;
+        font-size: var(--fs-2xl-mobile);
     }
 
     .content h2 {
-        font-size: 18px;
+        font-size: var(--fs-md);
     }
 
     .content h3 {
-        font-size: 15px;
+        font-size: var(--fs-toc);
     }
 
     .about-page {
@@ -652,7 +685,7 @@ a {
     }
 
     .about-title {
-        font-size: 22px;
+        font-size: var(--fs-lg);
     }
 
     .about-actions {
