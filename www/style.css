@@ -593,7 +593,6 @@ a {
     color: #ffffff;
 }
 
-.wiki-preview-extract,
 .wiki-preview-status {
     margin: 0;
     font-size: var(--fs-xs);
@@ -605,6 +604,37 @@ a {
     overflow: hidden;
 }
 
+.wiki-preview-extract {
+    margin: 0;
+    font-size: var(--fs-xs);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-height: 7.5em;
+    overflow-y: auto;
+    padding-right: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+}
+
+.wiki-preview-extract::-webkit-scrollbar {
+    width: 5px;
+}
+
+.wiki-preview-extract::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.wiki-preview-extract::-webkit-scrollbar-thumb {
+    background: var(--line);
+    border-radius: 3px;
+}
+
+.wiki-preview-extract::-webkit-scrollbar-thumb:hover {
+    background: var(--muted);
+}
+
+
+/* syntax highlight */
 .hljs {
     background: var(--code-bg);
     color: var(--ink-soft);
