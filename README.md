@@ -1,4 +1,4 @@
-## Awesome Low Level
+# Awesome Low Level
 
 A curated collection of resources for learning low-level programming from the ground up, starting with electronics and progressing toward the specialized fields you’re interested in.
 
