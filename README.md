@@ -48,14 +48,13 @@ A curated collection of resources for learning low-level programming from the gr
       - [Following Your Interests](#following-your-interests)
     - [Low-Level Programming Fields](#low-level-programming-fields)
       - [1. Embedded Systems](#1-embedded-systems)
-      - [2. FPGA Programming](#2-fpga-programming)
-      - [3. Compilers & Interpreters](#3-compilers--interpreters)
-      - [4. Operating Systems Development](#4-operating-systems-development)
-      - [5. GPGPU & Parallel Computing](#5-gpgpu--parallel-computing)
-      - [6. Graphics Programming](#6-graphics-programming)
-      - [7. Game Engine Development](#7-game-engine-development)
-      - [8. Network Systems Programming](#8-network-systems-programming)
-      - [9. Cybersecurity](#9-cybersecurity)
+      - [2. Compilers & Interpreters](#3-compilers--interpreters)
+      - [3. Operating Systems Development](#4-operating-systems-development)
+      - [4. GPGPU & Parallel Computing](#5-gpgpu--parallel-computing)
+      - [5. Graphics Programming](#6-graphics-programming)
+      - [6. Game Engine Development](#7-game-engine-development)
+      - [7. Network Systems Programming](#8-network-systems-programming)
+      - [8. Cybersecurity](#9-cybersecurity)
 - [Recommended Creators](#recommended-creators)
 - [Discord](#discord)
 - [License](#license)
@@ -167,7 +166,7 @@ If you've already worked with low-level concepts before, you can skip the beginn
 
 If you already have experience with languages like Python, Java, or C#, you probably already have a good understanding of programming fundamentals. That gives you a good head start. But low-level programming is a bit different, so don't approach everything the exact same way.
 
-When learning low-level programming, try not to rely too much on an object-oriented way of thinking. Instead, focus on understanding how data is stored, how memory is managed, how control flow works, and how programs interact with the hardware underneath. Depending on what you're learning, you will come across programming styles that are more [procedural](https://en.wikipedia.org/wiki/Procedural_programming), [function-based](https://en.wikipedia.org/wiki/Functional_programming), or data-oriented compared to what you might be used to from high-level languages.
+When learning low-level programming, try not to rely too much on an object-oriented way of thinking. Instead, focus on understanding how data is stored, how memory is managed, how control flow works, and how programs interact with the hardware underneath. Depending on what you're learning, you will come across programming styles that are more [procedural](https://en.wikipedia.org/wiki/Procedural_programming), [function-based](https://en.wikipedia.org/wiki/Functional_programming), or [data-oriented](https://en.wikipedia.org/wiki/Data-driven_programming) compared to what you might be used to from high-level languages.
 
 For example, the same task can be written using OOP in Java and a more procedural style in C.
 
@@ -256,9 +255,9 @@ Try not to immediately ask AI to write the entire program or solve the problem f
   <img width="4139" alt="Untitled-2026-08-25-2028" src="https://github.com/user-attachments/assets/8c9d045b-edb1-46d5-91dd-558e0dd53737" />
 </p>
 
-The diagram shows the different layers between the programmer and the computer's hardware. At the very bottom is the hardware itself, the physical parts that actually execute instructions and do the computations. Above that, you have [machine code](https://en.wikipedia.org/wiki/Machine_code), assembly, and programming languages. As you move higher up the stack, more of the hardware complexity is hidden behind layers of abstraction, which makes programming easier but also gives you less direct control over what's happening underneath.
+The diagram shows the different layers between the programmer and the computer's hardware. At the very bottom is the hardware itself, the physical parts that actually execute instructions and do the computations. Above that, you have [machine code](https://en.wikipedia.org/wiki/Machine_code), [assembly](https://en.wikipedia.org/wiki/Assembly_language), and programming languages. As you move higher up the stack, more of the hardware complexity is hidden behind layers of abstraction, which makes programming easier but also gives you less direct control over what's happening underneath.
 
-[Low-level programming](https://en.wikipedia.org/wiki/Low-level_programming_language) is about working closer to the machine and understanding what's actually happening across these layers. Instead of relying too much on abstractions, you work more directly with things like memory, the CPU, and other hardware resources.
+[Low-level programming](https://en.wikipedia.org/wiki/Low-level_programming_language) is about working closer to the machine and understanding what's actually happening across these layers. Instead of relying too much on abstractions, you work more directly with things like [memory](https://en.wikipedia.org/wiki/Computer_memory), the [CPU](https://en.wikipedia.org/wiki/Central_processing_unit), and other hardware resources.
 
 That's why low-level programming is often described as being "close to the hardware." Languages like Assembly and C are classic examples of low-level programming languages. Modern languages like C++, Rust, Zig, and Odin are also widely used for low-level and systems programming, while giving you different trade-offs between control, safety, and abstraction.
 
@@ -308,7 +307,7 @@ Another reason C remains valuable is its influence on the programming world. Man
  
 ## C vs C++ in Low-Level Programming
 
-[Stroustrup explains that modern C and modern C++ are better understood as sibling languages](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209) rather than one simply being a newer version of the other. Both languages evolved from a common ancestor, K&R C, but they later developed in different directions.
+Stroustrup explains that modern C and modern C++ are better understood as [sibling languages](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209) rather than one simply being a newer version of the other. Both languages evolved from a common ancestor, K&R C, but they later developed in different directions.
 
 This is important because C++ did not simply inherit modern versions of C such as C99 or C11. While the two languages still share a lot of concepts and historical overlap, they have evolved separately. This is also why modern C and modern C++ can sometimes behave quite differently despite looking very similar.
 
@@ -356,7 +355,7 @@ Depending on the topic, some sections might put a book before an official websit
  
 You don't need to have an in-depth knowledge of electronics before you start learning C or low-level programming. A basic understanding is more than enough.
 
-The goal here isn't to become an electrical engineer. Instead, it's to learn some fundamental concepts that can help you understand how computers work at the hardware level. Understanding things like voltage, logic gates, and simple digital circuits can make it much easier to understand what the computer is actually doing underneath.
+The goal here isn't to become an electrical engineer. Instead, it's to learn some fundamental concepts that can help you understand how computers work at the hardware level. Understanding things like voltage, [logic gates](https://en.wikipedia.org/wiki/Logic_gate), and simple [digital circuits](https://en.wikipedia.org/wiki/Electronic_circuit#Digital_circuits) can make it much easier to understand what the computer is actually doing underneath.
 
 - **[MIT OpenCourseWare: Circuits & Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)** 
 - **[Nand2Tetris](https://www.nand2tetris.org/)**
@@ -365,7 +364,7 @@ The goal here isn't to become an electrical engineer. Instead, it's to learn som
  
 Once you have a basic idea about the hardware side, start building a strong foundation in computer fundamentals. This is one of the most important parts of the roadmap because a lot of low-level programming concepts are built on these ideas.
 
-Learn how computers store and represent information, how the CPU executes instructions, how memory is organized, and how software interacts with hardware. As you go deeper into low-level programming, things like binary, CPU architecture, memory, storage, registers, caches, and instruction execution will become more and more important.
+Learn how computers store and represent information, how the CPU executes instructions, how memory is organized, and how software interacts with hardware. As you go deeper into low-level programming, things like binary, [microarchitecture](https://en.wikipedia.org/wiki/Microarchitecture), [ISA](https://en.wikipedia.org/wiki/Instruction_set_architecture), memory, storage, [registers](https://en.wikipedia.org/wiki/Processor_register), [caches](https://en.wikipedia.org/wiki/Cache_(computing)), and instruction execution will become more and more important.
 
 > The better you understand how a computer works internally, the easier it becomes to understand what's actually happening when your code runs. A lot of concepts that seem confusing in low-level programming start making much more sense once you have a good understanding of these fundamentals.
 
@@ -392,7 +391,7 @@ As you learn, try to look beyond what your code does and start asking how it act
  
 Once you're comfortable writing programs in C, start learning data structures and algorithms (DSA). These are important tools for organizing data efficiently and solving problems effectively.
 
-Focus on learning common data structures like arrays, linked lists, stacks, queues, hash tables, trees, heaps, and graphs. Along with them, learn important algorithmic concepts like searching, sorting, recursion, traversal techniques, and general problem-solving strategies.
+Focus on learning common data structures like [arrays](https://en.wikipedia.org/wiki/Array_(data_structure)), [linked lists](https://en.wikipedia.org/wiki/Linked_list), [stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)), [queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)), [hash tables](https://en.wikipedia.org/wiki/Hash_table), [trees](https://en.wikipedia.org/wiki/Binary_tree), [heaps](https://en.wikipedia.org/wiki/Heap_(data_structure)), and [graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)). Along with them, learn important algorithmic concepts like [searching](https://en.wikipedia.org/wiki/Search_algorithm), [sorting](https://en.wikipedia.org/wiki/Sorting_algorithm), [recursion](https://en.wikipedia.org/wiki/Recursion_(computer_science)), [traversal techniques](https://en.wikipedia.org/wiki/Tree_traversal), and general problem-solving strategies.
 
 > DSA is generally language agnostic, meaning the core concepts can be learned using any programming language. However, since this roadmap focuses on low-level programming, resources that teach DSA using C may be more relevant and useful.
 
@@ -427,7 +426,7 @@ Pick one or two that actually interest you and learn them alongside C. And if yo
 
 <img width="150" alt="cpp_logo" src="https://github.com/user-attachments/assets/3ed8fce0-cc22-48ae-bde1-3d136f6f4ad1" />
 
-C++ extends low-level programming with powerful abstraction mechanisms while still giving you significant control over memory, performance, and hardware-level details.
+[C++](https://en.wikipedia.org/wiki/C%2B%2B) extends low-level programming with powerful abstraction mechanisms while still giving you significant control over memory, performance, and hardware-level details.
  
 > C++ is a continuously evolving language. Because of that, many old tutorials, books, and videos you find online may teach outdated methods or older versions of the language. If you're starting today, it's much better to focus on modern C++, specifically standards like C++17, C++20, and C++23, since those reflect how C++ is actually used nowadays.
 
@@ -441,7 +440,7 @@ C++ extends low-level programming with powerful abstraction mechanisms while sti
 
 <img width="150" alt="rust-logo-512x512" src="https://github.com/user-attachments/assets/86e703e4-ff32-44c2-9e65-4dc8af1093c7" />
 
-Rust focuses on systems programming with strong compile-time guarantees for memory safety and concurrency.
+[Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) focuses on systems programming with strong compile-time guarantees for memory safety and concurrency.
 
 - **[The Rust Programming Language](https://doc.rust-lang.org/book/)**
 - **[Rustlings](https://github.com/rust-lang/rustlings)**
@@ -460,7 +459,7 @@ Rust focuses on systems programming with strong compile-time guarantees for memo
 
 <img width="150" alt="zig-programming-language-icon" src="https://github.com/user-attachments/assets/fa4257a9-5645-48a2-ae13-6657c2710d0a" />
 
-Zig emphasizes explicit control, predictable behavior, and close interoperability with C while providing a modern approach to systems programming.
+[Zig](https://en.wikipedia.org/wiki/Zig_(programming_language)) emphasizes explicit control, predictable behavior, and close interoperability with C while providing a modern approach to systems programming.
 
 - **[Zig Learn](https://ziglearn.org/)**
 - **[Zig Language Reference](https://ziglang.org/documentation/master/)**
@@ -552,20 +551,7 @@ You'll commonly use C and C++, with Rust becoming more popular in some projects.
 
 ---
 
-#### 2. FPGA Programming
-
-FPGA (Field-Programmable Gate Array) development is quite different from traditional programming because you're not just writing instructions for a CPU to execute. Instead, you're describing how the hardware itself should work. This makes FPGA development much closer to digital circuit design than normal software programming.
-
-You'll mainly work with hardware description languages like Verilog, VHDL, and sometimes SystemVerilog. Common tools include Xilinx Vivado, Intel Quartus, and simulation tools for testing designs before putting them on an FPGA board. Along the way, you'll learn about things like logic gates, flip-flops, finite state machines (FSMs), clock domains, pipelines, timing analysis, and DSP.
-
-> FPGAs are good at parallel processing, meaning they can perform many operations at the same time instead of executing instructions one by one like a typical CPU. Because of this, they're used in areas like hardware prototyping, signal processing, networking, AI acceleration, and other systems where high performance and low latency are important.
-
-- **[Awesome FPGA](https://github.com/Vitorian/awesome-fpga)**
-- **[Awesome FPGA Programming](https://github.com/emanueledelsozzo/awesome-fpga-programming)**
-
----
-
-#### 3. Compilers & Interpreters
+#### 2. Compilers & Interpreters
 
 Compiler and interpreter development is about understanding what happens behind the scenes when you write and run code. Instead of building applications, you're building the tools that process programming languages and turn them into something a computer can understand and execute.
 
@@ -577,7 +563,7 @@ In this field, you'll learn about things like lexers, parsers, Abstract Syntax T
 
 ---
 
-#### 4. Operating Systems Development
+#### 3. Operating Systems Development
 
 Operating systems development is one of the closest software fields to computer hardware. It focuses on building the software layer between applications and the hardware, managing things like the CPU, memory, storage, and peripherals. Working in this area gives you a much deeper understanding of how computers actually work underneath.
 
@@ -589,7 +575,7 @@ You'll commonly use C, C++, Rust, and sometimes Assembly. You'll learn about thi
 
 ---
 
-#### 5. GPGPU & Parallel Computing
+#### 4. GPGPU & Parallel Computing
 
 GPGPU (General-Purpose Computing on Graphics Processing Units) is about using GPUs for more than just rendering graphics. Instead of drawing images, you use the GPU to perform large computations that can be split into thousands or even millions of smaller tasks running in parallel.
 
@@ -602,7 +588,7 @@ You'll commonly work with things like CUDA, OpenCL, SYCL, HIP, and C++. You'll l
 
 ---
 
-#### 6. Graphics Programming
+#### 5. Graphics Programming
 
 Graphics programming sits between programming, mathematics, and GPU hardware. It focuses on creating and rendering visual content, from simple 2D graphics to realistic 3D worlds used in games, simulations, VR, and visualization software. You'll learn how data gets transformed into pixels on the screen and how GPUs render complex scenes efficiently.
 
@@ -614,7 +600,7 @@ You'll commonly use C++ with graphics APIs like Vulkan, OpenGL, DirectX 12, and 
 
 ---
 
-#### 7. Game Engine Development
+#### 6. Game Engine Development
 
 Game engine development is one of the broadest areas in low-level programming because it combines many different fields into one system. Instead of building a whole game, you're building the technology that games run on. A game engine handles things like graphics, physics, audio, input, memory management, and many other systems working together underneath.
 
@@ -627,7 +613,7 @@ You'll mainly work with C++, and sometimes C#, Rust, or scripting languages like
 
 ---
 
-#### 8. Network Systems Programming
+#### 7. Network Systems Programming
 
 Network systems programming focuses on how computers communicate and exchange data over networks. Instead of building websites or user interfaces, you're working on the systems underneath that allow devices, servers, and applications to send, receive, and process data efficiently. This field is used in everything from web servers and cloud infrastructure to multiplayer games and distributed systems.
 
@@ -642,7 +628,7 @@ You'll commonly use C, C++, Rust, and Go. You'll work with networking concepts l
 
 ---
 
-#### 9. Cybersecurity
+#### 8. Cybersecurity
 
 Cybersecurity is about protecting computer systems, networks, applications, and data from attacks, vulnerabilities, and unauthorized access. Instead of mainly building features for users, you're learning how systems can be secured, how attackers find weaknesses, and how those weaknesses can be detected and prevented.
 
