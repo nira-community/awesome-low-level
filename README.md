@@ -408,12 +408,11 @@ Focus on learning common data structures like [arrays](https://en.wikipedia.org/
  
 Once you feel comfortable with C and have some experience with data structures and algorithms, start building small projects of your own. This is where everything you've learned starts coming together.
 
-Reading about concepts is important, but you really understand them when you actually use them. Writing your own programs will force you to make decisions, solve problems, debug errors, and think more carefully about memory, data structures, program design, and how your code actually behaves.
+Reading about concepts is important, but you really understand them when you actually use them. Writing your own programs will force you to make decisions, solve problems, debug errors, and think more carefully about memory, data structures, program design, and how your code actually behaves. Don't be afraid to experiment. Try different approaches, break things, fix them, and learn from the process. That's how most programmers improve.
 
-Don't be afraid to experiment. Try different approaches, break things, fix them, and learn from the process. That's how most programmers improve.
+Here is one small shell project you can try once you are comfortable with the fundamentals. You don't have to build it perfectly, but if you want to start building. 
 
-> You don't need to build something huge or impressive. A simple project that teaches you a new concept can be more valuable than a big project that you don't fully understand. The goal is to take what you've learned from C, computer fundamentals, and DSA and turn it into actual hands-on experience.
-- Here is one small Shell project you can try once you are comfortable with the fundamentals. You don't have to build it perfectly, but if you want to start building. **[AMUNIX : Custom Unix Shell Guide](https://github.com/Cryogenicboom/Amunix/blob/main/docs/Part0.md)**
+- **[AMUNIX : Custom Unix Shell Guide](https://github.com/Cryogenicboom/Amunix/blob/main/docs/Part0.md)**
 
 ## 6. Learn Modern Low-Level Languages (Optional)
  
