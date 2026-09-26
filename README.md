@@ -397,7 +397,7 @@ Focus on learning common data structures like [arrays](https://en.wikipedia.org/
 
 - **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)** 
 - **[CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html)**
-- **[Data Structures and Algorithms Tutorial](https://www.w3schools.com/dsa/index.php)**
+- **[Analysis of Algorithms Lectures](https://www3.cs.stonybrook.edu/~skiena/373/videos/)**
 - **[Notes on Data Structures and Programming Techniques](https://cs.yale.edu/homes/aspnes/classes/223/notes.html)**
 - **[Algorithms for Competitive Programming](https://cp-algorithms.com/)**
 - **[Algorithms Design in C](https://www.ime.usp.br/~pf/algorithms/)**
