@@ -381,8 +381,7 @@ Once you've built a basic understanding of how computers work, it's time to star
 
 As you learn, try to look beyond what your code does and start asking how it actually works. Where is the data stored ? What happens in memory when a function is called ? How does the program access and modify data? Developing this mindset will help you get much more out of C instead of just learning the syntax of the language.
 
-- **[C Language](https://www.c-language.org/)**
-- **[The ANSI C Book](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628)**
+- **[All Resources of C Language](https://www.c-language.org/resources)**
 - **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**
 - **[C FAQ](https://c-faq.com/)**
 - **[Dive into Systems](https://diveintosystems.org/book/)**
