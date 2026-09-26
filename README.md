@@ -215,6 +215,8 @@ Once you're comfortable with things like memory, data representation, and progra
 
 From there, just continue following the roadmap and slowly build up your low-level programming knowledge step by step.
 
+---
+
 ## How to Learn ?
  
 Learning low-level programming isn't always easy. There will be times where you're stuck on a bug for hours, confused about a concept, feeling burned out, or even questioning why you started in the first place. That's completely normal. Every programmer goes through this. In fact, learning how to deal with difficult problems is a big part of becoming a better programmer.
