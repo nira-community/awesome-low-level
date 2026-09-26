@@ -413,6 +413,7 @@ Reading about concepts is important, but you really understand them when you act
 Don't be afraid to experiment. Try different approaches, break things, fix them, and learn from the process. That's how most programmers improve.
 
 > You don't need to build something huge or impressive. A simple project that teaches you a new concept can be more valuable than a big project that you don't fully understand. The goal is to take what you've learned from C, computer fundamentals, and DSA and turn it into actual hands-on experience.
+- Here is one small Shell project you can try once you are comfortable with the fundamentals. You don't have to build it perfectly, but if you want to start building. **[AMUNIX : Custom Unix Shell Guide](https://github.com/Cryogenicboom/Amunix/blob/main/docs/Part0.md)**
 
 ## 6. Learn Modern Low-Level Languages (Optional)
  
