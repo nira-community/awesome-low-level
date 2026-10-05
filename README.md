@@ -405,6 +405,7 @@ Focus on learning common data structures like [arrays](https://en.wikipedia.org/
 - **[Algorithms Design in C](https://www.ime.usp.br/~pf/algorithms/)**
 - **[C DSA interactive Suite](https://github.com/darshan2456/C_DSA_interactive_suite)**
 - **[Algorithms (Sedgewick & Wayne)](https://algs4.cs.princeton.edu/home/)**
+- **[Algorithm Books](https://github.com/0bprashanthc/algorithm-books/tree/master)**
  
 ## 5. Build Small Projects
  
