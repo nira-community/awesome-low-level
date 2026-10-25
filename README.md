@@ -313,7 +313,7 @@ Also notice that "low-level" isn't an on/off switch, it's a spectrum. You can be
 
 ### Why We Stop at Embedded
 
-Low-level programming on its own is a massive topic, because almost anything can be made low-level if you push it far enough: a game, a database, a cryptography routine, a video codec, even a web server. To keep this wiki focused, we stay in the overlap from the table above: software that other software depends on, written with direct control over the machine. We call that **low-level systems programming**, and whenever you see "low-level" in this wiki, that's usually what it means.
+Low-level programming on its own is a massive topic, because almost anything can be made low-level if you push it far enough: a game, a database, a cryptography routine, a video codec, even a web server. To keep this wiki focused, we stay in the overlap from the points above: software that other software depends on, written with direct control over the machine. We call that **low-level systems programming**, and whenever you see "low-level" in this wiki, that's usually what it means.
 
 Embedded systems is the lowest field we cover, and it sits right inside that overlap. Firmware is systems software, because it's the layer that runs the device and everything else on it depends on it. It's also low-level, because you talk to hardware registers, interrupts, and timers directly. A small RTOS is basically a tiny operating system. So embedded counts as low-level *and* systems at the same time.
 
