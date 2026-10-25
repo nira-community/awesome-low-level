@@ -305,13 +305,6 @@ A common misconception is that low-level programming and systems programming are
 
 ### Where They Overlap
 
-Neither one fully contains the other, so it helps to look at all four combinations:
-
-| | **Systems software** (supports other software) | **Not systems software** (the end product itself) |
-|---|---|---|
-| **Close to hardware** | An OS kernel, a device driver, firmware, a bootloader | A hand-optimized image filter, a SIMD math routine, a game's inner loop |
-| **Far from hardware** | A database or web server written in a high-level language, a build tool | A typical web app, a script, a mobile app |
-
 - **Low-level but not systems:** Hand-tuning a rendering loop for cache usage is very low-level, yet the program is a game or a visualization, not software that other programs depend on.
 - **Systems but not low-level:** A database server or a container runtime is systems software, but a large part of it can be written with plenty of abstraction and little hardware knowledge.
 - **Both:** A kernel, a driver, or the firmware running a device. It manages resources for other software *and* has to talk to the hardware directly. This is the area where the two ideas overlap.
@@ -830,7 +823,7 @@ Audio systems programming is about capturing, processing, and playing sound with
 
 You'll commonly use C, C++, and Rust. You'll learn about digital audio basics like sample rate, bit depth, channels, and buffers, along with latency, real-time programming, digital signal processing (DSP), synthesis, mixing, and resampling. On the system side you'll work with audio APIs like ALSA, JACK, PipeWire, and PulseAudio on Linux, WASAPI and ASIO on Windows, and Core Audio on macOS.
 
-> Audio code runs on a strict deadline, because the sound card keeps asking for the next small chunk of samples and a late answer is heard as a click or dropout. That's why audio code avoids anything unpredictable, like memory allocation or locks, in its real-time path. The tech stack often includes libraries like PortAudio, miniaudio, RtAudio, and SDL, frameworks like JUCE, and plugin formats like VST3, Audio Units, CLAP, and LV2. It also overlaps with game engines, embedded systems like synthesizers and effects pedals, and operating system audio drivers.
+> The tech stack often includes libraries like PortAudio, miniaudio, RtAudio, and SDL, frameworks like JUCE, and plugin formats like VST3, Audio Units, CLAP, and LV2. It also overlaps with game engines, embedded systems like synthesizers and effects pedals, and operating system audio drivers.
 
 - **[Real-time Audio Programming 101: Time Waits for Nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing)**
 - **[The Scientist and Engineer's Guide to Digital Signal Processing](https://www.dspguide.com/)**
