@@ -519,6 +519,7 @@ RISC-V is an open instruction set that anyone can implement without paying licen
 > You don't need a RISC-V board to start. Simulators and emulators like QEMU let you run RISC-V programs on your normal computer.
 
 - **[RISCV Learn](https://github.com/riscv/learn)**
+- **[Easy RISCV](https://easyriscv.dram.page/)**
 
 ## 3. Computer Fundamentals
 
@@ -693,10 +694,10 @@ Pick one or two that interest you and learn them alongside C. And if you enjoy C
 
 [Zig](https://en.wikipedia.org/wiki/Zig_(programming_language)) goes for explicit control and predictable behavior, with no hidden control flow and no hidden allocations. It also has compile-time code execution (`comptime`) and can build and link C code directly, so it works well alongside existing C projects.
 
-- **[Zig Learn](https://ziglearn.org/)**
 - **[Zig Language Reference](https://ziglang.org/documentation/master/)**
 - **[Ziglings](https://codeberg.org/ziglings/exercises)**
 - **[Learning Zig](https://pedropark99.github.io/zig-book/)**
+- **[Zig Learn](https://ziglearn.org/)**
 - **[Awesome Zig](https://github.com/zigcc/awesome-zig)**
 
 #### Odin
@@ -905,23 +906,42 @@ A collection of creators who cover topics related to low-level programming.
 
 > Learn from these creators by watching their videos, following their projects, and studying their code and how they solve problems. Treat them like mentors and learn from their experience.
 
-- **[Tsoding](https://www.youtube.com/@Tsoding)**
-- **[ThePrimeTimeagen](https://www.youtube.com/@ThePrimeTimeagen)**
-- **[CakeZ](https://www.youtube.com/@Cakez77)**
-- **[Artful Bytes](https://www.youtube.com/@artfulbytes)**
-- **[hoff._world](https://www.youtube.com/@hoff._world)**
-- **[tokyospliff](https://youtube.com/@tokyospliff)**
-- **[Sebastian Lague](https://youtube.com/@sebastianlague)**
-- **[javidx9](https://youtube.com/@javidx9)**
+**#**
 - **[3Blue1Brown](https://youtube.com/@3blue1brown)**
+
+**A**
+- **[Artful Bytes](https://www.youtube.com/@artfulbytes)**
+
+**C**
+- **[CakeZ](https://www.youtube.com/@Cakez77)**
 - **[Code Guild](https://youtube.com/@code-guild)**
-- **[TechExplained](https://www.youtube.com/@TechsExplained)**
-- **[Low Level Game Dev](https://www.youtube.com/@lowlevelgamedev9330)**
 - **[Core Dumped](https://youtube.com/@coredumpped)**
-- **[Kay Lack](https://www.youtube.com/@neoeno4242)**
+
+**D**
 - **[Dave's Garage](https://www.youtube.com/@DavesGarage)**
-- **[Low Level](https://www.youtube.com/@LowLevelTV)**
+
+**H**
+- **[hoff._world](https://www.youtube.com/@hoff._world)**
+
+**J**
+- **[javidx9](https://youtube.com/@javidx9)**
+
+**K**
+- **[Kay Lack](https://www.youtube.com/@neoeno4242)**
+
+**L**
 - **[LiveOverflow](https://www.youtube.com/@LiveOverflow)**
+- **[Low Level](https://www.youtube.com/@LowLevelTV)**
+- **[Low Level Game Dev](https://www.youtube.com/@lowlevelgamedev9330)**
+
+**S**
+- **[Sebastian Lague](https://youtube.com/@sebastianlague)**
+
+**T**
+- **[TechExplained](https://www.youtube.com/@TechsExplained)**
+- **[ThePrimeTimeagen](https://www.youtube.com/@ThePrimeTimeagen)**
+- **[tokyospliff](https://youtube.com/@tokyospliff)**
+- **[Tsoding](https://www.youtube.com/@Tsoding)**
 
 ---
 
