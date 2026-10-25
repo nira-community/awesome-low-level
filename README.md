@@ -825,9 +825,6 @@ You'll commonly use C, C++, and Rust. You'll learn about digital audio basics li
 
 > The tech stack often includes libraries like PortAudio, miniaudio, RtAudio, and SDL, frameworks like JUCE, and plugin formats like VST3, Audio Units, CLAP, and LV2. It also overlaps with game engines, embedded systems like synthesizers and effects pedals, and operating system audio drivers.
 
-- **[Real-time Audio Programming 101: Time Waits for Nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing)**
-- **[The Scientist and Engineer's Guide to Digital Signal Processing](https://www.dspguide.com/)**
-- **[miniaudio Documentation](https://miniaud.io/docs/)**
 - **[Awesome Audio DSP](https://github.com/BillyDM/Awesome-Audio-DSP)**
 
 ---
