@@ -506,6 +506,7 @@ Pick one or two that interest you and learn them alongside C. And if you enjoy C
 - **[Rust FFI Omnibus](https://jakegoulding.com/rust-ffi-omnibus/)**
 - **[Rust Cheatsheet](https://cheats.rs/)**
 - **[Awesome Rust](https://github.com/rust-unofficial/awesome-rust)**
+- **[Rust OsDev](https://rust-osdev.com/)**
 
 #### Zig
 
