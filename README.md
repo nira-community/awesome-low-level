@@ -354,6 +354,53 @@ for (int i = 0; i <= 3; i++) {   // bug: should be i < 3
 
 > **What goes wrong:** The array only has indexes 0, 1, and 2, so `numbers[3]` reads memory that doesn't belong to the array. C won't stop you or print an error. That's undefined behavior: the program might print garbage, crash, or seem to work fine today and break tomorrow. Higher-level languages usually catch this and throw an exception, while C trusts you to get it right.
 
+This exact mistake has its own entry in the SEI CERT C Coding Standard, a widely used set of rules for writing safer C. It explains why out-of-bounds access happens and shows compliant fixes:
+
+- **[SEI CERT C: ARR30-C. Do not form or use out-of-bounds pointers or array subscripts](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/#ARR30C.Donotformoruseoutofboundspointersorarraysubscripts-ImproperScaling)**
+
+C can't protect you from undefined behavior, so the protection has to come from your habits and tools. Here are the most common workarounds.
+
+**1. Don't hardcode sizes, and keep the length with the data.** Compute the element count once and use `<`, not `<=`. Use `size_t` for indexes, since it can't go negative.
+
+```c
+int numbers[3] = {10, 20, 30};
+size_t count = sizeof(numbers) / sizeof(numbers[0]);   // 3, calculated, not typed by hand
+
+for (size_t i = 0; i < count; i++) {
+    printf("%d\n", numbers[i]);
+}
+```
+
+> `sizeof(numbers) / sizeof(numbers[0])` only works on a real array. Once an array is passed to a function it decays into a plain pointer and its size is lost, so `sizeof` would give you the size of the pointer instead. That's why functions that take arrays should also take a length parameter.
+
+**2. Check before you access.** When an index comes from somewhere you don't control (user input, a file, the network), validate it first.
+
+```c
+int get_item(const int *arr, size_t len, size_t index, int *out) {
+    if (index >= len) {
+        return -1;          // report the error instead of reading out of bounds
+    }
+    *out = arr[index];
+    return 0;
+}
+```
+
+**3. Let the compiler and tools catch what you miss.** Turn on warnings, and run your tests with sanitizers. They add checks at runtime and report the exact line where an out-of-bounds access or other undefined behavior happens.
+
+```bash
+gcc -Wall -Wextra -g -fsanitize=address,undefined main.c -o main
+```
+
+> `-fsanitize=address` catches out-of-bounds reads and writes, use-after-free, and memory leaks. `-fsanitize=undefined` catches things like signed integer overflow and bad shifts. Valgrind is another good option. These tools slow your program down, so use them while developing and testing, not in the final build.
+
+**4. Avoid the other common sources of undefined behavior.**
+
+- **Uninitialized variables:** always give variables a value before reading them (`int x = 0;`).
+- **Use after free:** set a pointer to `NULL` after freeing it (`free(p); p = NULL;`), so a mistake becomes a clean crash instead of silent corruption.
+- **Unchecked allocation:** always check that `malloc()` didn't return `NULL`.
+- **Signed integer overflow:** it's undefined behavior in C. Check the values before the operation, or use unsigned types when wraparound is what you want.
+- **Unbounded string copies:** prefer `snprintf()` over `strcpy()` and `strcat()`, since it never writes past the size you give it.
+
 Learning to avoid these makes you think a lot harder about how memory, data, and system resources are used.
 
 > In many ways C is a great teacher. It hides less from you than higher-level languages, and mistakes tend to have visible consequences. That can be annoying, but it builds strong debugging skills and better habits.
