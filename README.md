@@ -535,10 +535,7 @@ add eax, ebx              addl %ebx, %eax
 
 > Notice that the operand order is reversed. Intel puts the destination first, AT&T puts it last. This trips up almost every beginner at least once.
 
-- **[Intel Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)**
-- **[x86-64 Assembly Language Programming with Ubuntu](https://www.egr.unlv.edu/~ed/x86.html)**
-- **[x86 and amd64 Instruction Reference](https://www.felixcloutier.com/x86/)**
-- **[Programming from the Ground Up](https://savannah.nongnu.org/projects/pgubook/)**
+- **[Introduction to x86-64](https://github.com/0xAX/asm)**
 
 ### ARM
 
