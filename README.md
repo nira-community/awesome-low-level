@@ -92,11 +92,11 @@ So, where should you start ?
 
 Maybe you're studying Computer Science, IT, EEE, or some other technical field, or maybe you taught yourself programming a while ago. Either way, there's no need to start from zero and relearn what a variable is.
 
-Low-level programming is a different animal, though. You can write plenty of code and still have no real idea what happens underneath, or how the computer actually runs it.
+Low-level programming is a different thing, though. You can write plenty of code and still have no real idea what happens underneath, or how the computer actually runs it.
 
 Also, knowing programming basics doesn't mean you know C.
 
-You probably recognize variables, loops, functions, conditions, and basic data structures from another language, but C comes with a lot more that matters for low-level work.
+You probably recognize variables, loops, functions, conditions, and basic data structures from another language, but C comes with a lot more that matters for low-level programming.
 
 For example, if you already know the basics, this code should look familiar:
 
@@ -112,7 +112,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-What makes C important for low-level programming goes well past this. You'll need to get comfortable with [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), [memory addresses](https://en.wikipedia.org/wiki/Memory_address), and [manual memory management](https://en.wikipedia.org/wiki/Manual_memory_management), since these are what connect your software to the hardware:
+What makes C important for low-level programming goes well past this. You'll need to get comfortable with [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), [memory addresses](https://en.wikipedia.org/wiki/Memory_address), and [manual memory management](https://en.wikipedia.org/wiki/Manual_memory_management):
 
 ```c
 int *ages = malloc(5 * sizeof(int));
@@ -517,7 +517,7 @@ Learn the basics here first, then once you reach C a couple of steps later, come
 gcc -S -O1 -masm=intel add.c -o add.s   # writes the assembly to add.s
 ```
 
-Compiler Explorer shows the same thing side by side with your code in the browser. Change the code a bit, watch how the output changes, and ask yourself why. After a while you'll have a pretty good idea of what the compiler does for you behind the scenes.
+Compiler Explorer shows the same thing side by side with your code in the browser. Change the code a bit, watch how the output changes. After a while you'll have a pretty good idea of what the compiler does for you behind the scenes.
 
 - **[Compiler Explorer](https://godbolt.org/)**
 
@@ -646,22 +646,6 @@ Once you're comfortable writing programs in C, start learning data structures an
 Start with the common data structures like [arrays](https://en.wikipedia.org/wiki/Array_(data_structure)), [linked lists](https://en.wikipedia.org/wiki/Linked_list), [stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)), [queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)), [hash tables](https://en.wikipedia.org/wiki/Hash_table), [trees](https://en.wikipedia.org/wiki/Binary_tree), [heaps](https://en.wikipedia.org/wiki/Heap_(data_structure)), and [graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)). Next to them, pick up the key algorithm ideas like [searching](https://en.wikipedia.org/wiki/Search_algorithm), [sorting](https://en.wikipedia.org/wiki/Sorting_algorithm), [recursion](https://en.wikipedia.org/wiki/Recursion_(computer_science)), [traversal techniques](https://en.wikipedia.org/wiki/Tree_traversal), and general problem-solving strategies.
 
 > DSA doesn't depend on any language, so you can learn the core ideas in whatever you like. Since this roadmap is about low-level programming, though, resources that teach it in C will usually serve you better.
-
-Low-level work adds one more thing to keep in mind: how your data is laid out in memory. Big-O tells you how an algorithm scales, but on a real CPU, cache locality matters a lot too. Compare these two ways of summing a collection:
-
-```c
-// Array: all values sit next to each other in memory
-for (size_t i = 0; i < n; i++) {
-    sum += array[i];
-}
-
-// Linked list: each node can be anywhere in memory
-for (struct Node *node = head; node != NULL; node = node->next) {
-    sum += node->value;
-}
-```
-
-> **Why the array usually wins:** Both loops are O(n), but the CPU loads memory in chunks called cache lines. Walking an array uses every byte of each chunk, and the CPU can predict what you'll read next. Following linked list pointers jumps around memory, so the CPU often has to wait for RAM. The textbook says they're equal, but in practice the array can be many times faster.
 
 - **[MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)**
 - **[CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html)**
