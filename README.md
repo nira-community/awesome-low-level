@@ -523,6 +523,8 @@ Compiler Explorer shows the same thing side by side with your code in the browse
 
 ### x86-64
 
+<img width="150" alt="amd64" src="https://github.com/user-attachments/assets/776ec685-843e-4bf9-98e2-3307bc1008f5" />
+
 x86-64 is the 64-bit extension of the x86 line that goes all the way back to the 8086, and it's what runs inside most desktops, laptops, and servers. It's the most common place to start since you probably already own a machine with it, and there's a huge pile of tutorials, books, and tools to go with it. It's a CISC design with variable-length instructions (1 to 15 bytes) and decades of backward compatibility, which is why it can look messy at first. You only need a small part of it to get going. Also keep in mind that there are two assembly syntaxes, Intel and AT&T. The manuals use Intel, while GNU tools default to AT&T unless you switch them, so check which one a resource is using.
 
 ```asm
@@ -540,6 +542,8 @@ add eax, ebx              addl %ebx, %eax
 
 ### ARM
 
+<img width="150" alt="arm@logotyp us" src="https://github.com/user-attachments/assets/7ffc8a30-aa9c-4689-a9b2-bb9f781e9c54" />
+
 ARM powers almost every phone and tablet, Apple Silicon Macs, the Raspberry Pi, and most microcontrollers. It's a good pick if you own one of those devices or you're leaning toward embedded systems. ARM is a RISC design with a load/store architecture, meaning arithmetic works on registers only and separate load and store instructions move data to and from memory. AArch64 also uses fixed-width 32-bit instructions and has 31 general-purpose registers, which makes it fairly clean and regular, and many beginners find it easier to read than x86.
 
 ```asm
@@ -554,6 +558,8 @@ add w1, w1, w2      // arithmetic only works on registers
 - **[Arm Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest)**
 
 ### RISC-V
+
+<img width="350" alt="RISC-V-logo svg" src="https://github.com/user-attachments/assets/810405fe-0c28-4999-b174-6577d065d3f2"/>
 
 RISC-V is an open instruction set that anyone can implement without paying license fees. It's also a RISC, load/store design, but it's built as a small base plus optional extensions. The base integer ISA (RV32I or RV64I) is tiny, and extensions add things like multiplication and division (M), atomics (A), floating point (F and D), and compressed instructions (C). That modularity is a big part of why it's so pleasant to learn from, and why it shows up in everything from microcontrollers to research CPUs. If you want to understand how an instruction set is designed in the first place, RISC-V is a great one to study.
 
