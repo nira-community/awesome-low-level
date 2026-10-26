@@ -768,9 +768,9 @@ C3 is a general-purpose programming language with systems-level performance, tha
 - **[All about C3](https://c3programming.com/)**
 - **[Learn & Practice C3](https://github.com/officialmuneebahmad/Learning-Practicing-C3)**
 
-If you're curious about other ways of thinking about programming, you can also try some less common languages like Ante, Carp, Futhark, and Forth. They'll show you ideas that look nothing like what you see in C.
-
 ### Non-Procedural Languages
+
+If you're curious about other ways of thinking about programming, you can also try some less common languages like Ante, Carp, Futhark, and Forth. They'll show you ideas that look nothing like what you see in C.
 
 #### Ante
 
