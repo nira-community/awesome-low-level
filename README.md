@@ -755,7 +755,7 @@ Odin is a systems programming language built around simplicity and data-oriented
 
 #### C3
 
-<img width="150" alt="odin" src="https://github.com/user-attachments/assets/0d3d6347-2da6-4545-9a8c-391259d70d93" />
+<img width="150" alt="C3" src="https://github.com/user-attachments/assets/795bd5c9-c6be-4f0b-a72e-a6a8adfc49d6" />
 
 C3 is a general-purpose programming language with systems-level performance, that scales from drivers and embedded software to games, desktop applications, servers, and developer tools.
 
