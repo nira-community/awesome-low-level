@@ -24,6 +24,7 @@ A curated collection of resources for learning low-level programming from the gr
   - [Where They Overlap](#where-they-overlap)
   - [Why We Stop at Embedded](#why-we-stop-at-embedded)
 - [Why Learning C is Important ?](#why-learning-c-is-important-)
+  - [What Does C Expect From You ?](#what-does-c-expect-from-you-)
 - [C vs C++ in Low-Level Programming](#c-vs-c-in-low-level-programming)
 - [Let's Gooo !](#lets-gooo-)
 - [Roadmap](#roadmap)
@@ -236,13 +237,11 @@ If you want a more realistic picture of what learning to program looks like, we 
 
 A very common beginner problem is following a tutorial just fine and then having no clue how to build anything alone. If that sounds like you, try learning through projects.
 
-Pick a topic, learn the basics from one of the resources in this guide, and then build something with it. Using what you learned is where most of the real learning happens.
-
-> For example, if you just learned about linked lists, write one yourself in C. If you're learning about memory allocation, try building a simple memory allocator.
+Pick a topic, learn the basics from one of the resources in this guide, and then build something with it. Using what you learned is where most of the real learning happens. For example, if you just learned about linked lists, write one yourself in C. If you're learning about memory allocation, try building a simple memory allocator.
 
 Whenever you can, try to solve the problem yourself before hunting for a tutorial with the exact answer. Documentation is fine for syntax and technical details, but give the problem some thought first. Once you've built something, compare your solution with other people's and see what you can pick up from them.
 
-> Watch out for tutorial hell, too. It's very easy to burn hours watching videos, reading articles, and bookmarking resources without writing a single line of code. Tutorials help you understand concepts, but they can't replace hands-on practice.
+Watch out for tutorial hell, too. It's very easy to burn hours watching videos, reading articles, and bookmarking resources without writing a single line of code. Tutorials help you understand concepts, but they can't replace hands-on practice.
 
 Stick to the fundamentals, build small projects, and write your own code. Your first attempts will probably not be great, and that's fine. What matters is that you start, make mistakes, and get a little better each time.
 
@@ -252,9 +251,7 @@ AI can be a good learning aid, as long as you treat it as a tool and not a short
 
 It works best for explaining concepts, making sense of error messages, pointing out flaws in your reasoning, or nudging you toward a solution. You can also use it like Google for syntax, API details, documentation, and quick explanations.
 
-Try not to ask it to write the entire program or solve the problem from start to finish, because then you only get the answer and skip the understanding.
-
-> Use AI to support your learning, not to replace the thinking and problem-solving that actually make you a better programmer.
+Try not to ask it to write the entire program or solve the problem from start to finish, because then you only get the answer and skip the understanding. Use AI to support your learning, not to replace the thinking and problem-solving that actually make you a better programmer.
 
 ---
 
@@ -340,6 +337,8 @@ A few reasons C still matters:
 - **C puts very few restrictions on style**. It doesn't push any ideology, and as a result there are very few kinds of programs that can't be written in it.
 - **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Even Python, Ruby, PHP, and Perl run on implementations that are mostly written in C or C++.
 
+### What Does C Expect From You ?
+
 C also teaches you to be careful. It gives you a lot of power and freedom, and with that comes responsibility, because small mistakes can turn into serious problems if you're not paying attention. You'll run into things like [invalid memory access](https://en.wikipedia.org/wiki/Segmentation_fault), [buffer overflows](https://en.wikipedia.org/wiki/Buffer_overflow), [memory leaks](https://en.wikipedia.org/wiki/Memory_leak), [undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior), and [pointer related bugs](https://en.wikipedia.org/wiki/Stale_pointer_bug).
 
 Here's a classic example of how easy it is to get this wrong:
@@ -401,13 +400,9 @@ gcc -Wall -Wextra -g -fsanitize=address,undefined main.c -o main
 - **Signed integer overflow:** it's undefined behavior in C. Check the values before the operation, or use unsigned types when wraparound is what you want.
 - **Unbounded string copies:** prefer `snprintf()` over `strcpy()` and `strcat()`, since it never writes past the size you give it.
 
-Learning to avoid these makes you think a lot harder about how memory, data, and system resources are used.
+Learning to avoid these makes you think a lot harder about how memory, data, and system resources are used. In many ways C is a great teacher. It hides less from you than higher-level languages, and mistakes tend to have visible consequences. That can be annoying, but it builds strong debugging skills and better habits.
 
-> In many ways C is a great teacher. It hides less from you than higher-level languages, and mistakes tend to have visible consequences. That can be annoying, but it builds strong debugging skills and better habits.
-
-C is also valuable because of how much it influenced everything else. Many modern languages borrowed ideas, syntax, and design choices straight from it.
-
-> By learning C, you'll understand why a lot of modern language features exist in the first place, and you'll see what's going on behind the scenes, which is usually hidden when you work in higher-level languages like Python, JavaScript, or Java.
+C is also valuable because of how much it influenced everything else. Many modern languages borrowed ideas, syntax, and design choices straight from it. By learning C, you'll understand why a lot of modern language features exist in the first place, and you'll see what's going on behind the scenes, which is usually hidden when you work in higher-level languages like Python, JavaScript, or Java.
 
 ---
 
@@ -437,11 +432,9 @@ C++ gives you many more abstractions and tools, which make development easier. C
 
 That doesn't make C++ automatically high-level, though. One of its strengths is that you choose how much abstraction to use. You can write code that's very close to C when you need direct control, or reach for higher-level features when they make sense.
 
-> Both C and C++ are powerful and widely used for low-level work, and neither is better in every situation.
+Both C and C++ are powerful and widely used for low-level work, and neither is better in every situation. So, do you have to learn C before C++ ?
 
-So, do you have to learn C before C++ ?
-
-Not at all.
+**Not at all**.
 
 If C++ interests you more, it's perfectly fine to start there. You don't need to master C first. Just make sure you understand what C++ is built on, like memory, pointers, data layout, and how programs interact with the system.
 
@@ -515,7 +508,7 @@ How much assembly you need depends on where you end up. Some fields, like game e
 
 > **Why isn't this part of Computer Fundamentals ?** Computer fundamentals covers the ideas: how data is represented, how a CPU fetches, decodes, and executes instructions, how memory is organized. Those ideas hold on every machine, and you mostly pick them up by reading and thinking. Assembly is a hands-on skill tied to one specific ISA, with its own syntax, its own tooling (an assembler, a linker, a debugger like GDB), and its own conventions. x86-64, ARM, and RISC-V differ enough in design and conventions that each one needs its own resources, and that doesn't fit inside a fundamentals section.
 
-> Assembly is not portable. Every ISA has its own instructions, registers, and conventions, and even on the same ISA the calling convention can change between operating systems (System V on Linux versus Microsoft x64 on Windows, for example). Pick one to start with instead of trying to learn them all at once. The core ideas carry over, which makes the second one much easier.
+Assembly is not portable. Every ISA has its own instructions, registers, and conventions, and even on the same ISA the calling convention can change between operating systems (System V on Linux versus Microsoft x64 on Windows, for example). Pick one to start with instead of trying to learn them all at once. The core ideas carry over, which makes the second one much easier.
 
 Learn the basics here first, then once you reach C a couple of steps later, come back and write small C programs and compare them with the assembly the compiler produces. You can try it yourself:
 
@@ -596,7 +589,7 @@ int main(void) {
 
 > **What you'll see:** On most modern machines (x86-64 and ARM in their usual mode) the first line prints `78 56 34 12`. The least significant byte is stored first, which is called **little-endian**. The second line prints `ff`, because in two's complement, -1 is all bits set to 1. The idea behind two's complement is that the same adder circuit works for positive and negative numbers, which is why CPUs use it.
 
-> The better you understand how a computer works inside, the easier it is to see what happens when your code runs. Plenty of confusing low-level concepts start making sense once these fundamentals are in place.
+The better you understand how a computer works inside, the easier it is to see what happens when your code runs. Plenty of confusing low-level concepts start making sense once these fundamentals are in place.
 
 - **[Exploring How Computers Work](https://www.youtube.com/watch?v=QZwneRb-zqA)**
 - **[Computer Systems: A Programmer's Perspective](https://www.amazon.com/dp/9332573905/)**
