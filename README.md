@@ -851,6 +851,7 @@ You'll commonly use C, C++, Rust, and sometimes Assembly. You'll learn about mem
 
 > Many OS developers study or contribute to projects like Linux, FreeBSD, Windows internals, Minix, or hobby operating systems. For debugging, tools like GDB, QEMU, Bochs, and kernel debuggers are common. Some parts of a kernel, like the bootloader, context switching, and interrupt entry code, can only be written in assembly.
 
+- **[Rust OSDev](https://rust-osdev.com/)**
 - **[Awesome OS Dev](https://github.com/devse-org/awesome-osdev)**
 
 ---
