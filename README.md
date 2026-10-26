@@ -43,6 +43,7 @@ A curated collection of resources for learning low-level programming from the gr
       - [Rust](#rust)
       - [Zig](#zig)
       - [Odin](#odin)
+      - [C3](#c3)
     - [Non-Procedural Languages](#non-procedural-languages)
       - [Ante](#ante)
       - [Carp](#carp)
@@ -751,6 +752,15 @@ Odin is a systems programming language built around simplicity and data-oriented
 - **[Understanding the Odin Programming Language](https://odinbook.com/)**
 - **[Learn Odin in Y Minutes](https://learnxinyminutes.com/odin/)**
 - **[Awesome Odin](https://github.com/jakubtomsu/awesome-odin)**
+
+#### C3
+
+<img width="150" alt="odin" src="https://github.com/user-attachments/assets/0d3d6347-2da6-4545-9a8c-391259d70d93" />
+
+C3 is a general-purpose programming language with systems-level performance, that scales from drivers and embedded software to games, desktop applications, servers, and developer tools.
+
+- **[All about C3](https://c3programming.com/)**
+- **[Learn & Practice C3](https://github.com/officialmuneebahmad/Learning-Practicing-C3)**
 
 If you're curious about other ways of thinking about programming, you can also try some less common languages like Ante, Carp, Futhark, and Forth. They'll show you ideas that look nothing like what you see in C.
 
