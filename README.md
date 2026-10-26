@@ -559,7 +559,7 @@ add w1, w1, w2      // arithmetic only works on registers
 
 ### RISC-V
 
-<img width="150" alt="riscv" src="https://github.com/user-attachments/assets/c492cf12-13a2-4de7-a80a-7bd7b3e2388d"/>
+<img width="150" alt="riscv" src="https://github.com/user-attachments/assets/79a52ba6-45a9-4ef7-8de6-a8fc6652a815"/>
 
 RISC-V is an open instruction set that anyone can implement without paying license fees. It's also a RISC, load/store design, but it's built as a small base plus optional extensions. The base integer ISA (RV32I or RV64I) is tiny, and extensions add things like multiplication and division (M), atomics (A), floating point (F and D), and compressed instructions (C). That modularity is a big part of why it's so pleasant to learn from, and why it shows up in everything from microcontrollers to research CPUs. If you want to understand how an instruction set is designed in the first place, RISC-V is a great one to study.
 
