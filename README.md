@@ -889,7 +889,7 @@ You'll commonly use C++ with graphics APIs like Vulkan, OpenGL, DirectX 12, and 
 
 > Graphics programming leans heavily on math like linear algebra, vectors, matrices, transformations, and geometry. You'll work closely with GPUs from NVIDIA, AMD, and Intel, and learn how to speed up rendering and use graphics resources well. It's used in game engines, 3D modeling software, VR/AR apps, scientific visualization, CAD software, simulations, and modern user interfaces.
 
-- **[Awesome Graphics Programming](https://nira-community.github.io/awesome-graphics)**
+- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**
 
 ---
 
