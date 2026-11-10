@@ -8,14 +8,14 @@ A curated collection of resources for learning low-level programming from the gr
 
 - [Why We Made This ?](#why-we-made-this-)
 - [How to Refer ?](#how-to-refer-)
-  - [If You're an Absolute Beginner](#if-youre-an-absolute-beginner)
-    - [But, You Already Have Some Programming Experience](#but-you-already-have-some-programming-experience)
-    - [But, You're Really New to Programming](#but-youre-really-new-to-programming)
-      - [1. Start with Basics](#1-start-with-basics)
-      - [2. Build your Computer Science Foundation](#2-build-your-computer-science-foundation)
-      - [3. Go Deeper with a Structured Path](#3-go-deeper-with-a-structured-path)
+  - [If You're New to Programming](#if-youre-new-to-programming)
+    - [1. Start with Basics](#1-start-with-basics)
+    - [2. Build your Computer Science Foundation](#2-build-your-computer-science-foundation)
+    - [3. Go Deeper with a Structured Path](#3-go-deeper-with-a-structured-path)
+  - [If You Already Know How to Program](#if-you-already-know-how-to-program)
+    - [Learn What C Adds](#learn-what-c-adds)
+    - [Think Beyond Objects](#think-beyond-objects)
   - [If You Have Some Low-Level Experience](#if-you-have-some-low-level-experience)
-  - [If You Have High-Level Programming Experience](#if-you-have-high-level-programming-experience)
 - [How to Learn ?](#how-to-learn-)
   - [Project-Based Learning](#project-based-learning)
   - [Using AI Tools](#using-ai-tools)
@@ -25,14 +25,20 @@ A curated collection of resources for learning low-level programming from the gr
   - [Why We Stop at Embedded](#why-we-stop-at-embedded)
 - [Why Learning C is Important ?](#why-learning-c-is-important-)
   - [What Does C Expect From You ?](#what-does-c-expect-from-you-)
+  - [How to Stay Safe in C](#how-to-stay-safe-in-c)
 - [C vs C++ in Low-Level Programming](#c-vs-c-in-low-level-programming)
 - [Let's Gooo !](#lets-gooo-)
 - [Roadmap](#roadmap)
   - [1. Basic Electronics](#1-basic-electronics)
   - [2. Assembly](#2-assembly)
-    - [x86-64](#x86-64)
-    - [ARM](#arm)
-    - [RISC-V](#risc-v)
+    - [What is Assembly ?](#what-is-assembly-)
+    - [A Few Terms You'll See](#a-few-terms-youll-see)
+    - [How Much Assembly Do You Need ?](#how-much-assembly-do-you-need-)
+    - [Picking an Architecture](#picking-an-architecture)
+      - [x86-64](#x86-64)
+      - [ARM](#arm)
+      - [RISC-V](#risc-v)
+    - [Practice: Read What the Compiler Writes](#practice-read-what-the-compiler-writes)
   - [3. Computer Fundamentals](#3-computer-fundamentals)
   - [4. C Programming](#4-c-programming)
   - [5. Practice Data Structures & Algorithms](#5-practice-data-structures--algorithms)
@@ -50,20 +56,21 @@ A curated collection of resources for learning low-level programming from the gr
       - [Futhark](#futhark)
       - [Forth](#forth)
   - [8. Pick a Specialized Field](#8-pick-a-specialized-field)
+    - [Fields at a Glance](#fields-at-a-glance)
     - [Which Field to Pick ?](#which-field-to-pick-)
       - [Following the Language You Like](#following-the-language-you-like)
       - [Following How Close You Want to Be to Hardware](#following-how-close-you-want-to-be-to-hardware)
       - [Following Your Interests](#following-your-interests)
     - [Low-Level Programming Fields](#low-level-programming-fields)
       - [1. Embedded Systems](#1-embedded-systems)
-      - [2. Compilers & Interpreters](#2-compilers--interpreters)
-      - [3. Operating Systems Development](#3-operating-systems-development)
-      - [4. Audio Systems Programming](#4-audio-systems-programming)
-      - [5. GPGPU & Parallel Computing](#5-gpgpu--parallel-computing)
-      - [6. Graphics Programming](#6-graphics-programming)
-      - [7. Game Engine Development](#7-game-engine-development)
-      - [8. Network Systems Programming](#8-network-systems-programming)
-      - [9. Cybersecurity](#9-cybersecurity)
+      - [2. Operating Systems Development](#2-operating-systems-development)
+      - [3. Compilers & Interpreters](#3-compilers--interpreters)
+      - [4. Network Systems Programming](#4-network-systems-programming)
+      - [5. Cybersecurity](#5-cybersecurity)
+      - [6. GPGPU & Parallel Computing](#6-gpgpu--parallel-computing)
+      - [7. Graphics Programming](#7-graphics-programming)
+      - [8. Game Engine Development](#8-game-engine-development)
+      - [9. Audio Systems Programming](#9-audio-systems-programming)
 - [Recommended Creators](#recommended-creators)
 - [Discord](#discord)
 - [License](#license)
@@ -84,21 +91,54 @@ This megathread is not a perfect or complete guide, and we almost certainly miss
 
 You don't have to read or finish everything here. Everyone learns differently, so pick one or two resources that suit you and stick with them.
 
-So, where should you start ?
+So, where should you start ? Pick the description that fits you best:
 
-### If You're an Absolute Beginner
+- **[New to programming](#if-youre-new-to-programming):** start from the very basics.
+- **[Already know how to program](#if-you-already-know-how-to-program):** skip the basics and learn what C and low-level programming add.
+- **[Have some low-level experience](#if-you-have-some-low-level-experience):** jump straight to the topics you're missing.
 
-#### But, You Already Have Some Programming Experience
+Whichever fits you, the rest works the same way: follow the roadmap (or the parts of it you need) at your own pace and build your understanding step by step.
 
-Maybe you're studying Computer Science, IT, EEE, or some other technical field, or maybe you taught yourself programming a while ago. Either way, there's no need to start from zero and relearn what a variable is.
+### If You're New to Programming
 
-Low-level programming is a different thing, though. You can write plenty of code and still have no real idea what happens underneath, or how the computer actually runs it.
+If you come from a non-CS background and want to learn programming before touching low-level stuff, don't worry about knowing everything up front. Nobody starts out understanding all of this. Learn the basics, build a decent foundation, and move into the lower-level concepts as you get more comfortable.
 
-Also, knowing programming basics doesn't mean you know C.
+Pick whatever works for you and take it at your own pace, but we'd suggest going through these roughly in this order:
 
-You probably recognize variables, loops, functions, conditions, and basic data structures from another language, but C comes with a lot more that matters for low-level programming.
+#### 1. Start with Basics
 
-For example, if you already know the basics, this code should look familiar:
+If you've never programmed before, begin here. It's a beginner-friendly introduction that answers a lot of the questions people usually have when they first get into programming.
+
+- **[r/learnprogramming wiki](https://www.reddit.com/r/learnprogramming/wiki/faq/#wiki_getting_started)**
+
+#### 2. Build your Computer Science Foundation
+
+Once the basics feel comfortable, CS50 is a great next step. It gives you a solid understanding of programming and computer science, and it teaches you how to think through problems step by step.
+
+- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
+
+#### 3. Go Deeper with a Structured Path
+
+After CS50 you can pick topics based on what you want to do. If you'd like a complete, structured way to study on your own, OSSU is hard to beat. It's a full computer science curriculum covering programming, math, computer systems, theory, and a lot more.
+
+- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
+
+Those are enough to get going, but they're far from the only options. Here are a few more worth a look, depending on what you want to learn.
+
+- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**
+- **[CSdiy](https://csdiy.wiki/en/)**
+- **[Teach Yourself CS](https://teachyourselfcs.com/)**
+- **[Awesome CS](https://github.com/prakhar1989/awesome-courses)**
+
+### If You Already Know How to Program
+
+Maybe you're studying Computer Science, IT, EEE, or some other technical field, maybe you taught yourself programming a while ago, or maybe you work with languages like Python, Java, or C#. Either way, there's no need to start from zero and relearn what a variable is. Good programming fundamentals are a nice head start.
+
+Low-level programming is a different thing, though. You can write plenty of code and still have no real idea what happens underneath, or how the computer actually runs it. Also, knowing programming basics doesn't mean you know C.
+
+#### Learn What C Adds
+
+You probably recognize variables, loops, functions, conditions, and basic data structures from another language, so this code should look familiar:
 
 ```c
 int age = 20;
@@ -130,52 +170,11 @@ for (int i = 0; i < 5; i++) {
 free(ages);
 ```
 
-> **How the code works:** `malloc()` requests `5 * sizeof(int)` bytes from the heap and returns a pointer to the start of that block, which `ages` stores. The memory comes back uninitialized, so the first `for` loop fills it and the second one reads the values back and checks the condition. `free(ages)` returns the block to the allocator. A real program should also check that `malloc()` didn't return `NULL`, and it must never touch `ages` again after the `free()`.
+> **How the code works:** `malloc()` requests `5 * sizeof(int)` bytes from the heap and returns a pointer to the start of that block, which `ages` stores. The memory comes back uninitialized, so the first `for` loop fills it and the second one reads the values back and checks the condition. `free(ages)` returns the block to the allocator. A real program also has to check what `malloc()` returned and never touch `ages` after the `free()`, which is covered in [How to Stay Safe in C](#how-to-stay-safe-in-c).
 
-You don't have to relearn everything from scratch, though. Just focus on the C concepts and computer fundamentals you haven't seen yet, then follow the roadmap and build things up step by step.
+#### Think Beyond Objects
 
-#### But, You're Really New to Programming
-
-If you come from a non-CS background and want to learn programming before touching low-level stuff, don't worry about knowing everything up front. Nobody starts out understanding all of this. Learn the basics, build a decent foundation, and move into the lower-level concepts as you get more comfortable.
-
-Pick whatever works for you and take it at your own pace, but we'd suggest going through these roughly in this order:
-
-##### 1. Start with Basics
-
-If you've never programmed before, begin here. It's a beginner-friendly introduction that answers a lot of the questions people usually have when they first get into programming.
-
-- **[r/learnprogramming wiki](https://www.reddit.com/r/learnprogramming/wiki/faq/#wiki_getting_started)**
-
-##### 2. Build your Computer Science Foundation
-
-Once the basics feel comfortable, CS50 is a great next step. It gives you a solid understanding of programming and computer science, and it teaches you how to think through problems step by step.
-
-- **[CS50: Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science)**
-
-##### 3. Go Deeper with a Structured Path
-
-After CS50 you can pick topics based on what you want to do. If you'd like a complete, structured way to study on your own, OSSU is hard to beat. It's a full computer science curriculum covering programming, math, computer systems, theory, and a lot more.
-
-- **[Open Source Society University (OSSU)](https://github.com/ossu/computer-science)**
-
-Those are enough to get going, but they're far from the only options. Here are a few more worth a look, depending on what you want to learn.
-
-- **[Beej's Guide to Learning Computer Science](https://beej.us/guide/bglcs/)**
-- **[CSdiy](https://csdiy.wiki/en/)**
-- **[Teach Yourself CS](https://teachyourselfcs.com/)**
-- **[Awesome CS](https://github.com/prakhar1989/awesome-courses)**
-
-From there, follow the roadmap and build your understanding step by step.
-
-### If You Have Some Low-Level Experience
-
-If you've already worked with low-level concepts, skip the beginner parts and spend your time on what you're less familiar with. You don't need to follow the roadmap from the start. Use the table of contents to jump to the topics you want and fill in the gaps.
-
-### If You Have High-Level Programming Experience
-
-If you already work with languages like Python, Java, or C#, you've probably got a good grip on programming fundamentals, which is a nice head start. Low-level programming is still a different thing, so try not to approach it the exact same way.
-
-In particular, don't lean too hard on object-oriented thinking. Pay attention to how data is stored, how memory is managed, how control flow works, and how your program talks to the hardware underneath. Along the way you'll run into styles that are more [procedural](https://en.wikipedia.org/wiki/Procedural_programming), [function-based](https://en.wikipedia.org/wiki/Functional_programming), or [data-oriented](https://en.wikipedia.org/wiki/Data-driven_programming) than what you're used to.
+Low-level programming also asks you to think differently about how a program is structured. In particular, don't lean too hard on object-oriented thinking. Pay attention to how data is stored, how memory is managed, how control flow works, and how your program talks to the hardware underneath. Along the way you'll run into styles that are more [procedural](https://en.wikipedia.org/wiki/Procedural_programming), [function-based](https://en.wikipedia.org/wiki/Functional_programming), or [data-oriented](https://en.wikipedia.org/wiki/Data-driven_programming) than what you're used to.
 
 Here's the same task written in an OOP style in Java and a procedural style in C.
 
@@ -220,9 +219,11 @@ This gives you more control over how data is stored, accessed, and changed. Inst
 
 > None of this means OOP is bad or something to avoid. It's used heavily in C++, especially in game development, graphics, simulations, and large software projects. Just don't treat it as the default answer to every problem.
 
-Once you're comfortable with memory, data representation, and program flow, you can look into other programming styles and see where each one makes sense.
+You don't have to relearn everything from scratch. Focus on the C concepts and computer fundamentals you haven't seen yet, and once you're comfortable with memory, data representation, and program flow, you can look into other programming styles and see where each one makes sense.
 
-After that, keep following the roadmap and build up your low-level knowledge step by step.
+### If You Have Some Low-Level Experience
+
+If you've already worked with low-level concepts, skip the beginner parts and spend your time on what you're less familiar with. You don't need to follow the roadmap from the start. Use the table of contents to jump to the topics you want and fill in the gaps.
 
 ---
 
@@ -305,7 +306,7 @@ A common misconception is that low-level programming and systems programming are
 
 - **Low-level but not systems:** Hand-tuning a rendering loop for cache usage is very low-level, yet the program is a game or a visualization, not software that other programs depend on.
 - **Systems but not low-level:** A database server or a container runtime is systems software, but a large part of it can be written with plenty of abstraction and little hardware knowledge.
-- **Both:** A kernel, a driver, or the firmware running a device. It manages resources for other software *and* has to talk to the hardware directly. This is the area where the two ideas overlap.
+- **Both:** A kernel, a driver, or the firmware running a device. It manages resources for other software *and* has to talk to the hardware directly.
 
 Also notice that "low-level" isn't an on/off switch, it's a spectrum. You can be low-level in the way you write one function inside an otherwise high-level program.
 
@@ -327,16 +328,15 @@ Going below that, into the territory of **hardware design**, is where we stop. T
 
 ## Why Learning C is Important ?
 
-If you're interested in low-level programming, [C](https://en.wikipedia.org/wiki/C_(programming_language)) is one of the best places to start. It's over 50 years old and still one of the most important and widely used languages in the world, and a lot of the ideas and tools programmers use today trace back to it.
+If you're interested in low-level programming, [C](https://en.wikipedia.org/wiki/C_(programming_language)) is one of the best places to start. It's over 50 years old and still one of the most important and widely used languages in the world.
 
 A few reasons C still matters:
 
 - **C runs almost everywhere**. Tiny microcontrollers, embedded devices, desktop apps, servers, operating systems, you name it. You'll find C on nearly every kind of computer.
 - **C is efficient and lightweight**. It maps closely to what the machine actually does and has a tiny runtime, with no garbage collector and no hidden allocations. That makes it easy to predict roughly what code the compiler will generate and how much memory your program uses, which is exactly what you want in performance-critical and resource-limited systems.
 - **C has a simple, stable ABI**. An ABI (Application Binary Interface) is the set of rules for how compiled code calls other compiled code, like how arguments are passed and where return values go. Almost every other language can call into C libraries, which is why so many libraries and system interfaces, including the system calls of most operating systems, are exposed as C APIs.
-- **C is flexible**. It doesn't force a particular style or paradigm on you, so you can structure your program in whatever way fits the problem.
-- **C puts very few restrictions on style**. It doesn't push any ideology, and as a result there are very few kinds of programs that can't be written in it.
-- **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Even Python, Ruby, PHP, and Perl run on implementations that are mostly written in C or C++.
+- **C is flexible**. It doesn't force a particular style or paradigm on you, so you can structure your program in whatever way fits the problem, and there are very few kinds of programs that can't be written in it.
+- **A huge amount of software is built on C**. Many programming languages, operating systems, databases, compilers, and developer tools are written in C or heavily influenced by it. Even Python, Ruby, PHP, and Perl run on implementations that are mostly written in C or C++. Many modern languages also borrowed ideas, syntax, and design choices straight from it, so learning C helps you understand why a lot of modern language features exist and what's going on behind the scenes in higher-level languages like Python, JavaScript, or Java.
 
 ### What Does C Expect From You ?
 
@@ -358,7 +358,9 @@ This exact mistake has its own entry in the SEI CERT C Coding Standard, a widely
 
 - **[SEI CERT C: ARR30-C. Do not form or use out-of-bounds pointers or array subscripts](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/#ARR30C.Donotformoruseoutofboundspointersorarraysubscripts-ImproperScaling)**
 
-C can't protect you from undefined behavior, so the protection has to come from your habits and tools. Here are the most common workarounds.
+### How to Stay Safe in C
+
+C can't protect you from undefined behavior, so the protection has to come from your habits and tools. Here are the most common ones.
 
 **1. Don't hardcode sizes, and keep the length with the data.** Compute the element count once and use `<`, not `<=`. Use `size_t` for indexes, since it can't go negative.
 
@@ -403,15 +405,11 @@ gcc -Wall -Wextra -g -fsanitize=address,undefined main.c -o main
 
 Learning to avoid these makes you think a lot harder about how memory, data, and system resources are used. In many ways C is a great teacher. It hides less from you than higher-level languages, and mistakes tend to have visible consequences. That can be annoying, but it builds strong debugging skills and better habits.
 
-C is also valuable because of how much it influenced everything else. Many modern languages borrowed ideas, syntax, and design choices straight from it. By learning C, you'll understand why a lot of modern language features exist in the first place, and you'll see what's going on behind the scenes, which is usually hidden when you work in higher-level languages like Python, JavaScript, or Java.
-
 ---
 
 ## C vs C++ in Low-Level Programming
 
-Stroustrup explains that modern C and modern C++ are better seen as [sibling languages](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209) than as one being the newer version of the other. They share a common ancestor in K&R C, but they've grown in different directions since.
-
-This matters because C++ never simply adopted modern C versions like C99 or C11. The two still share a lot of concepts and history, but they've developed separately, which is why modern C and modern C++ can behave quite differently even when the code looks almost identical. A classic example is `int *p = malloc(n);`, which is perfectly fine in C but an error in C++, where `void *` doesn't convert to other pointer types implicitly and you need an explicit cast:
+Stroustrup explains that modern C and modern C++ are better seen as [sibling languages](https://www.stroustrup.com/siblings_short.pdf#:~:text=C%2B%2B%20is%20a%20descendant%20of%20K%26R%20C.,%2B%20%2B%209%208%20C%208%209) than as one being the newer version of the other. They share a common ancestor in K&R C, but they've grown in different directions since. C++ never simply adopted modern C versions like C99 or C11, which is why the two can behave quite differently even when the code looks almost identical. A classic example is `int *p = malloc(n);`, which is perfectly fine in C but an error in C++, where `void *` doesn't convert to other pointer types implicitly and you need an explicit cast:
 
 ```c
 // Valid C, but a compile error in C++
@@ -425,13 +423,10 @@ int *p = static_cast<int *>(malloc(10 * sizeof(int)));
 
 Seeing them as siblings also helps when you're deciding which one to learn. You'll often hear "learn C before C++," especially for low-level work, and the reasoning is that C shows you much more of what's happening under the hood.
 
-C has relatively few abstractions, so you're pushed to understand memory, pointers, strings, and data representation instead of letting language features handle them for you. That makes it a good way to learn how programs really work.
-
-C++ gives you many more abstractions and tools, which make development easier. Classes, templates, RAII, and the standard library let you build bigger and more complex software without writing everything yourself. The catch is that you can use all of it without fully understanding what's going on underneath.
+- **C** has relatively few abstractions, so you're pushed to understand memory, pointers, strings, and data representation instead of letting language features handle them for you. That makes it a good way to learn how programs really work.
+- **C++** gives you many more abstractions and tools, like classes, templates, RAII, and the standard library, which let you build bigger and more complex software without writing everything yourself. The catch is that you can use all of it without fully understanding what's going on underneath. That doesn't make C++ automatically high-level, though. You choose how much abstraction to use, and you can write code that's very close to C when you need direct control.
 
 > **What is RAII ?** Resource Acquisition Is Initialization is a C++ idea where a resource (memory, a file, a lock) is tied to an object's lifetime. When the object goes out of scope, its destructor releases the resource automatically, so you don't have to remember to call `free()` or `close()` yourself.
-
-That doesn't make C++ automatically high-level, though. One of its strengths is that you choose how much abstraction to use. You can write code that's very close to C when you need direct control, or reach for higher-level features when they make sense.
 
 Both C and C++ are powerful and widely used for low-level work, and neither is better in every situation. So, do you have to learn C before C++ ?
 
@@ -449,9 +444,7 @@ Now that you have a rough idea of what low-level programming is, it's time to st
 
 Take your time with the roadmap. Low-level programming is a broad field, and it's normal for some topics to take longer than others. Focus on actually understanding the fundamentals instead of rushing through them.
 
-Each section in the roadmap starts with a short explanation, followed by a list of recommended resources. They're mostly in priority order, so start with the first one and work down the list when you need more.
-
-Depending on the topic, some sections put a book before the official website, while others start with the official docs or references. Follow the order given, and use the extra resources whenever you want another explanation or a deeper look.
+Each section in the roadmap starts with a short explanation, followed by a list of recommended resources. They're mostly in priority order, so start with the first one and work down the list when you want another explanation or a deeper look. Some sections put a book before the official website, while others start with the official docs, so just follow the order given.
 
 > One of the most useful skills a programmer can have is finding and understanding information on their own. Tutorials are great, but they shouldn't be your only way of learning. Get comfortable reading documentation, researching topics, trying things in code, and figuring stuff out yourself, because that will help you long after you finish this roadmap.
 
@@ -487,7 +480,11 @@ Chain a few of these together and you can add multi-bit numbers, which is exactl
 
 ## 2. Assembly
 
-Once you've seen how gates and circuits work, the next question is how a CPU gets told what to do with them. [Assembly](https://en.wikipedia.org/wiki/Assembly_language) is the answer. Every CPU family defines an instruction set architecture (ISA), which is the set of instructions, registers, and memory rules that software can use, and [machine code](https://en.wikipedia.org/wiki/Machine_code) is the binary encoding of those instructions. Assembly is the readable text form of that encoding. Most assembly instructions map one to one to a machine instruction, although an assembler also gives you labels, directives, macros, and sometimes pseudo-instructions that expand into real ones. Either way, there's very little standing between you and the hardware.
+Once you've seen how gates and circuits work, the next question is how a CPU gets told what to do with them. [Assembly](https://en.wikipedia.org/wiki/Assembly_language) is the answer. It's the lowest-level language you can comfortably read and write, and there's very little standing between you and the hardware.
+
+### What is Assembly ?
+
+Every CPU family defines an instruction set architecture (ISA), which is the set of instructions, registers, and memory rules that software can use. Assembly is the readable text form of those instructions, the step right above the machine code from the layers diagram earlier. Most assembly instructions map one to one to a machine instruction, although an assembler also gives you labels, directives, macros, and sometimes pseudo-instructions that expand into real ones.
 
 Here's a tiny C function and the x86-64 assembly (Intel syntax) that GCC produces for it with optimization turned on:
 
@@ -505,23 +502,44 @@ add:
 
 > **Reading it:** On Linux, the System V calling convention passes the first two integer arguments in the registers `rdi` and `rsi`, and the return value goes back in `eax`. `lea` is normally used to compute addresses, but compilers also use it as a cheap way to add two registers. One line of C became two instructions, and no function-call machinery is left except the `ret`.
 
-How much assembly you need depends on where you end up. Some fields, like game engines, graphics, or network programming, don't ask for heavy assembly knowledge to get started, and you can get pretty far reading it only when you're debugging or chasing performance. Low-level systems programming as a whole is a different story. Assembly is part of the territory there: a kernel's bootloader, context switching, and interrupt entry code can only be written in it, compilers generate it, and tracking down a nasty crash or a security bug often means reading it. Since that's what this wiki is about, it comes early in the roadmap.
+### A Few Terms You'll See
 
-> **Why isn't this part of Computer Fundamentals ?** Computer fundamentals covers the ideas: how data is represented, how a CPU fetches, decodes, and executes instructions, how memory is organized. Those ideas hold on every machine, and you mostly pick them up by reading and thinking. Assembly is a hands-on skill tied to one specific ISA, with its own syntax, its own tooling (an assembler, a linker, a debugger like GDB), and its own conventions. x86-64, ARM, and RISC-V differ enough in design and conventions that each one needs its own resources, and that doesn't fit inside a fundamentals section.
+Assembly comes with its own vocabulary. Here are the basic terms, using the example above:
+
+- **Instruction:** a single command for the CPU, like `lea` or `ret`.
+- **Register:** a tiny, very fast storage slot inside the CPU. `rdi`, `rsi`, and `eax` are registers.
+- **Operand:** the thing an instruction works on, such as a register, a memory address, or a constant. In `lea eax, [rdi + rsi]`, both `eax` and `[rdi + rsi]` are operands.
+- **Label:** a name for a spot in the code, like `add:`, which other instructions can jump or call to.
+- **Directive:** a command for the assembler instead of the CPU, like `.section` or `.global`. It controls how the file gets assembled and doesn't become a machine instruction.
+- **Comment:** notes for humans that the assembler ignores. The marker depends on the assembler (`;`, `#`, or `//`).
+
+### How Much Assembly Do You Need ?
+
+It depends on where you end up. Some fields, like game engines, graphics, or network programming, don't need much assembly to get started, and you can get pretty far reading it only when you're debugging or chasing performance. Low-level systems work is a different story. Kernels, firmware, compilers, and security research all touch assembly, whether you're writing it, reading what a compiler generated, or tracking down a nasty crash. Since that's what this wiki is about, it comes early in the roadmap. The field sections later on point out where assembly shows up in each one.
+
+You don't need to write big programs in assembly. To begin with, focus on being able to read and write small pieces of it:
+
+- Registers and what they're used for
+- Moving data around (loading from and storing to memory)
+- Basic arithmetic and logic instructions
+- Comparisons and jumps, which is how `if` statements and loops work at this level
+- The stack, and how functions are called and return
+
+> **Why isn't this part of Computer Fundamentals ?** Computer fundamentals covers the ideas: how data is represented, how a CPU fetches, decodes, and executes instructions, how memory is organized. Those ideas hold on every machine, and you mostly pick them up by reading and thinking. Assembly is a hands-on skill tied to one specific ISA, with its own syntax, its own tooling (an assembler, a linker, a debugger like GDB), and its own conventions. x86-64, ARM, and RISC-V differ enough that each one needs its own resources, and that doesn't fit inside a fundamentals section.
+
+### Picking an Architecture
 
 Assembly is not portable. Every ISA has its own instructions, registers, and conventions, and even on the same ISA the calling convention can change between operating systems (System V on Linux versus Microsoft x64 on Windows, for example). Pick one to start with instead of trying to learn them all at once. The core ideas carry over, which makes the second one much easier.
 
-Learn the basics here first, then once you reach C a couple of steps later, come back and write small C programs and compare them with the assembly the compiler produces. You can try it yourself:
+If you're not sure which one to pick, here's a quick guide:
 
-```bash
-gcc -S -O1 -masm=intel add.c -o add.s   # writes the assembly to add.s
-```
+- **Regular PC or laptop with an Intel or AMD chip:** go with [x86-64](#x86-64).
+- **Apple Silicon Mac, Raspberry Pi, or you're leaning toward embedded systems:** go with [ARM](#arm).
+- **You want to see how an instruction set is designed, or you'd rather use a simulator:** go with [RISC-V](#risc-v).
 
-Compiler Explorer shows the same thing side by side with your code in the browser. Change the code a bit, watch how the output changes. After a while you'll have a pretty good idea of what the compiler does for you behind the scenes.
+> The easiest choice is usually the architecture of the machine you already own, since you can assemble, run, and debug your programs directly without any extra setup.
 
-- **[Compiler Explorer](https://godbolt.org/)**
-
-### x86-64
+#### x86-64
 
 <img width="150" alt="amd64" src="https://github.com/user-attachments/assets/776ec685-843e-4bf9-98e2-3307bc1008f5" />
 
@@ -537,11 +555,11 @@ add eax, ebx              addl %ebx, %eax
 
 - **[Introduction to x86-64](https://github.com/0xAX/asm)**
 
-### ARM
+#### ARM
 
 <img width="150"  alt="ARM_powered_Badge" src="https://github.com/user-attachments/assets/63627fce-eca9-45fa-83d4-d977d9e240dd" />
 
-ARM powers almost every phone and tablet, Apple Silicon Macs, the Raspberry Pi, and most microcontrollers. It's a good pick if you own one of those devices or you're leaning toward embedded systems. ARM is a RISC design with a load/store architecture, meaning arithmetic works on registers only and separate load and store instructions move data to and from memory. AArch64 also uses fixed-width 32-bit instructions and has 31 general-purpose registers, which makes it fairly clean and regular, and many beginners find it easier to read than x86.
+ARM powers almost every phone and tablet, Apple Silicon Macs, the Raspberry Pi, and most microcontrollers. It's a RISC design with a load/store architecture, meaning arithmetic works on registers only and separate load and store instructions move data to and from memory. AArch64 also uses fixed-width 32-bit instructions and has 31 general-purpose registers, which makes it fairly clean and regular, and many beginners find it easier to read than x86.
 
 ```asm
 // AArch64: add the value at memory address x0 to register w1
@@ -554,16 +572,30 @@ add w1, w1, w2      // arithmetic only works on registers
 - **[ARM Assembly Basics (Azeria Labs)](https://azeria-labs.com/writing-arm-assembly-part-1/)**
 - **[Arm Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest)**
 
-### RISC-V
+#### RISC-V
 
 <img width="150" alt="riscv" src="https://github.com/user-attachments/assets/79a52ba6-45a9-4ef7-8de6-a8fc6652a815"/>
 
-RISC-V is an open instruction set that anyone can implement without paying license fees. It's also a RISC, load/store design, but it's built as a small base plus optional extensions. The base integer ISA (RV32I or RV64I) is tiny, and extensions add things like multiplication and division (M), atomics (A), floating point (F and D), and compressed instructions (C). That modularity is a big part of why it's so pleasant to learn from, and why it shows up in everything from microcontrollers to research CPUs. If you want to understand how an instruction set is designed in the first place, RISC-V is a great one to study.
+RISC-V is an open instruction set that anyone can implement without paying license fees. It's also a RISC, load/store design, but it's built as a small base plus optional extensions. The base integer ISA (RV32I or RV64I) is tiny, and extensions add things like multiplication and division (M), atomics (A), floating point (F and D), and compressed instructions (C). That modularity is a big part of why it's so pleasant to learn from, and why it shows up in everything from microcontrollers to research CPUs.
 
 > You don't need a RISC-V board to start. Simulators and emulators like QEMU let you run RISC-V programs on your normal computer.
 
 - **[RISCV Learn](https://github.com/riscv/learn)**
 - **[Easy RISCV](https://easyriscv.dram.page/)**
+
+### Practice: Read What the Compiler Writes
+
+Learn the basics here first, then once you reach C a couple of steps later, come back and write small C programs and compare them with the assembly the compiler produces. You can try it yourself by saving the `add` function from earlier as `add.c`:
+
+```bash
+gcc -S -O1 -masm=intel add.c -o add.s   # writes the assembly to add.s
+```
+
+> `-S` tells GCC to stop after generating assembly, `-O1` turns on light optimization so the output stays short and readable (at `-O0` it's much noisier), and `-masm=intel` switches x86 output to Intel syntax. That last flag only applies to x86. On an ARM or RISC-V machine, GCC simply writes that architecture's assembly.
+
+Compiler Explorer shows the same thing side by side with your code in the browser. Change the code a bit, watch how the output changes. After a while you'll have a pretty good idea of what the compiler does for you behind the scenes.
+
+- **[Compiler Explorer](https://godbolt.org/)**
 
 ## 3. Computer Fundamentals
 
@@ -604,7 +636,14 @@ The better you understand how a computer works inside, the easier it is to see w
 
 <img width="150" alt="c_512x512" src="https://github.com/user-attachments/assets/4b52552b-d591-4bf8-9d59-64f2e86d61cc" />
 
-Once you understand the basics of how computers work, it's time to learn C. As you go, pay attention to pointers and pointer arithmetic, arrays, structs (including padding and alignment), memory allocation, stack versus heap, data representation, bitwise operations, and undefined behavior, since these topics are the foundation for low-level programming. Having seen some assembly already, you'll find it easier to picture what a pointer or a stack frame really is.
+Once you understand the basics of how computers work, it's time to learn C. Having seen some assembly already, you'll find it easier to picture what a pointer or a stack frame really is. As you go, pay attention to these topics, since they're the foundation for low-level programming:
+
+- Pointers and pointer arithmetic
+- Arrays
+- Structs, including padding and alignment
+- Memory allocation, and the stack versus the heap
+- Data representation and bitwise operations
+- Undefined behavior (see [What Does C Expect From You ?](#what-does-c-expect-from-you-))
 
 Try to look past what your code does and ask how it actually works. Where is the data stored ? What happens in memory when a function is called ? How does the program read and change data ? Thinking this way gets you far more out of C than just memorizing the syntax.
 
@@ -683,6 +722,8 @@ Pick one or two that interest you and learn them alongside C. And if you enjoy C
 
 ### Procedural Languages
 
+Procedural languages like C are mostly a list of steps telling the computer exactly what to do. These are the ones closest to the style you'll already know from C.
+
 #### C++
 
 <img width="150" alt="cpp_logo" src="https://github.com/user-attachments/assets/3ed8fce0-cc22-48ae-bde1-3d136f6f4ad1" />
@@ -751,7 +792,7 @@ C3 is a general-purpose programming language with systems-level performance, tha
 
 ### Non-Procedural Languages
 
-If you're curious about other ways of thinking about programming, you can also try some less common languages like Ante, Carp, Futhark, and Forth. They'll show you ideas that look nothing like what you see in C.
+If you're curious about other ways of thinking about programming, you can also try some less common languages like Ante, Carp, Futhark, and Forth. Models like functional or stack-based programming solve problems differently, and they'll show you ideas that look nothing like what you see in C.
 
 #### Ante
 
@@ -777,8 +818,6 @@ A stack-based language that works well for embedded programming and direct hardw
 
 - **[Awesome Forth](https://github.com/lassik/awesome-forth)**
 
-> If "procedural" and "non-procedural" sound confusing, don't sweat it for now. Procedural languages like C are mostly a list of steps telling the computer exactly what to do. Other models, like functional or stack-based programming, solve problems differently and can give you a fresh view on how programs can be designed.
-
 The point of learning extra languages is to deepen your understanding of programming and pick up new ways to think about problems. Someone with strong fundamentals can usually learn a new language quickly when they need to.
 
 ## 8. Pick a Specialized Field
@@ -789,13 +828,29 @@ There's no rush to specialize. Many beginners jump into advanced topics too earl
 
 > The fields below overlap a lot. A game engine developer touches graphics and audio, a compiler developer touches operating systems, and a security researcher touches almost everything. Think of them as starting points, not boxes.
 
+### Fields at a Glance
+
+Here's a quick overview before the details. Click a field name to jump to its section.
+
+| Field | What You Work On | Commonly Used Languages |
+| --- | --- | --- |
+| [Embedded Systems](#1-embedded-systems) | Software for microcontrollers and devices built to do specific jobs | C, C++, Rust |
+| [Operating Systems Development](#2-operating-systems-development) | The layer between applications and the hardware: kernels, drivers, schedulers | C, C++, Rust, Assembly |
+| [Compilers & Interpreters](#3-compilers--interpreters) | Tools that read programming languages and turn them into something a computer can run | C++, Rust, C, OCaml, Java |
+| [Network Systems Programming](#4-network-systems-programming) | The systems that let computers send, receive, and process data over networks | C, C++, Rust, Go |
+| [Cybersecurity](#5-cybersecurity) | Finding and fixing weaknesses in systems, networks, and software | C, C++, Python, Rust |
+| [GPGPU & Parallel Computing](#6-gpgpu--parallel-computing) | Using GPUs for large calculations split into many small parallel tasks | C++, CUDA, OpenCL, SYCL, HIP |
+| [Graphics Programming](#7-graphics-programming) | Turning data into pixels, from simple 2D to realistic 3D | C++, GLSL, HLSL |
+| [Game Engine Development](#8-game-engine-development) | The technology games run on: rendering, physics, audio, input | C++, C#, Rust, Lua |
+| [Audio Systems Programming](#9-audio-systems-programming) | Capturing, processing, and playing sound in real time | C, C++, Rust |
+
 ### Which Field to Pick ?
 
 If you're new to low-level programming, it's hard to tell where to start. There are plenty of specializations, and each one focuses on a different part of computers and software. A good way to narrow it down is to follow what interests you, whether that's a language you enjoy, a field that sounds exciting, or a wish to work closer to the hardware. Start somewhere and adjust as you figure out what you like.
 
 #### Following the Language You Like
 
-An easy way to explore fields is to start from a language you already enjoy. Different areas tend to favor certain languages, and many of them have a few that are basically the industry standard.
+An easy way to explore fields is to start from a language you already enjoy. Different areas tend to favor certain languages, and many of them have a few that are basically the industry standard. The languages column in the table above is a good place to start.
 
 > For example, if you enjoy writing C++, you might like Game Engine Development, Graphics Programming, Audio Systems Programming, or GPGPU and Parallel Computing, since C++ is used heavily in those fields. Instead of forcing yourself to pick a specialization first, you can look at where your favorite language is commonly used and explore from there.
 
@@ -818,6 +873,8 @@ You also don't have to lock yourself into one path from day one. Pick something 
 
 ### Low-Level Programming Fields
 
+Here's each field in more detail. They're grouped by theme, not ranked: hardware and operating systems first, then infrastructure and security, then GPU, graphics, and media work.
+
 #### 1. Embedded Systems
 
 Embedded programming means writing software for devices built to do specific jobs, like microcontrollers, robots, car systems, IoT devices, and industrial equipment. Unlike desktop or web development, you'll often work very close to the hardware, where memory, processing power, and energy are all limited.
@@ -831,19 +888,7 @@ You'll mostly use C and C++, and Rust is becoming more popular in some projects.
 
 ---
 
-#### 2. Compilers & Interpreters
-
-Compiler and interpreter development is about understanding what happens behind the scenes when you write and run code. Instead of building apps, you build the tools that read programming languages and turn them into something a computer can run.
-
-You'll learn about lexers, parsers, Abstract Syntax Trees (ASTs), type systems, semantic analysis, Intermediate Representations (IRs), optimizations, and machine code generation, and you'll see how source code passes through several stages before it becomes a program you can run.
-
-> The tech stack often includes languages like C++, Rust, C, OCaml, and Java, along with tools like LLVM, Clang, GCC, MLIR, ANTLR, Flex, and Bison. You may also come across virtual machines, bytecode, JIT compilers, garbage collectors, and CPU architectures like x86-64, ARM, and RISC-V. Knowing assembly is very useful here, since code generation targets it directly.
-
-- **[Awesome Compilers](https://github.com/aalhour/awesome-compilers)**
-
----
-
-#### 3. Operating Systems Development
+#### 2. Operating Systems Development
 
 Operating systems development is one of the closest software fields to the hardware. You build the software layer between applications and the machine, which manages the CPU, memory, storage, and devices, and working in it gives you a much deeper understanding of how computers really work.
 
@@ -856,57 +901,19 @@ You'll commonly use C, C++, Rust, and sometimes Assembly. You'll learn about mem
 
 ---
 
-#### 4. Audio Systems Programming
+#### 3. Compilers & Interpreters
 
-Audio systems programming is about capturing, processing, and playing sound with software that has to keep up with the real world. Instead of building the buttons and menus of a music app, you work on the engine underneath, the code that keeps the speakers fed with samples on time, mixes many sounds together, applies effects, and talks to the sound hardware through the operating system.
+Compiler and interpreter development is about understanding what happens behind the scenes when you write and run code. Instead of building apps, you build the tools that read programming languages and turn them into something a computer can run.
 
-You'll commonly use C, C++, and Rust. You'll learn about digital audio basics like sample rate, bit depth, channels, and buffers, along with latency, real-time programming, digital signal processing (DSP), synthesis, mixing, and resampling. On the system side you'll work with audio APIs like ALSA, JACK, PipeWire, and PulseAudio on Linux, WASAPI and ASIO on Windows, and Core Audio on macOS.
+You'll learn about lexers, parsers, Abstract Syntax Trees (ASTs), type systems, semantic analysis, Intermediate Representations (IRs), optimizations, and machine code generation, and you'll see how source code passes through several stages before it becomes a program you can run.
 
-> The tech stack often includes libraries like PortAudio, miniaudio, RtAudio, and SDL, frameworks like JUCE, and plugin formats like VST3, Audio Units, CLAP, and LV2. It also overlaps with game engines, embedded systems like synthesizers and effects pedals, and operating system audio drivers.
+> The tech stack often includes languages like C++, Rust, C, OCaml, and Java, along with tools like LLVM, Clang, GCC, MLIR, ANTLR, Flex, and Bison. You may also come across virtual machines, bytecode, JIT compilers, garbage collectors, and CPU architectures like x86-64, ARM, and RISC-V. Knowing assembly is very useful here, since code generation targets it directly.
 
-- **[Awesome Audio DSP](https://github.com/BillyDM/Awesome-Audio-DSP)**
-
----
-
-#### 5. GPGPU & Parallel Computing
-
-GPGPU (General-Purpose Computing on Graphics Processing Units) means using GPUs for more than drawing graphics. Instead of rendering images, you use the GPU for large calculations that can be split into thousands or even millions of small tasks running at the same time.
-
-You'll commonly work with CUDA, OpenCL, SYCL, HIP, and C++, and learn about parallel programming, threads, warps, kernels, shared memory, memory bandwidth, vectorized computation, and GPU architecture. The usual hardware is NVIDIA, AMD, and Intel GPUs, often paired with powerful CPUs.
-
-> GPGPU is widely used in scientific computing, physics simulations, machine learning, AI, image processing, financial modeling, and other work that needs a lot of computation. Since GPUs have many small cores running tasks in parallel, they can be much faster than CPUs for certain problems.
-
-- **[Awesome GPGPU](https://github.com/jslee02/awesome-gpgpu)**
-- **[Awesome GPU](https://github.com/Jokeren/Awesome-GPU)**
+- **[Awesome Compilers](https://github.com/aalhour/awesome-compilers)**
 
 ---
 
-#### 6. Graphics Programming
-
-Graphics programming sits between programming, math, and GPU hardware. It covers creating and rendering visual content, from simple 2D graphics to realistic 3D worlds in games, simulations, VR, and visualization software. You'll learn how data turns into pixels on the screen and how GPUs render complex scenes efficiently.
-
-You'll commonly use C++ with graphics APIs like Vulkan, OpenGL, DirectX 12, and sometimes Metal. You'll come across rendering pipelines, vertex transformations, cameras, lighting, textures, materials, shadows, animation, rasterization, and ray tracing, and you'll write shaders in languages like GLSL and HLSL that run directly on the GPU.
-
-> Graphics programming leans heavily on math like linear algebra, vectors, matrices, transformations, and geometry. You'll work closely with GPUs from NVIDIA, AMD, and Intel, and learn how to speed up rendering and use graphics resources well. It's used in game engines, 3D modeling software, VR/AR apps, scientific visualization, CAD software, simulations, and modern user interfaces.
-
-- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**
-
----
-
-#### 7. Game Engine Development
-
-Game engine development is one of the broadest areas in low-level programming because it mixes so many fields into one system. Instead of building a whole game, you build the technology games run on. An engine handles graphics, physics, audio, input, memory management, and plenty more, all working together.
-
-You'll mainly work with C++, and sometimes C#, Rust, or scripting languages like Lua. You'll come across rendering, physics, audio, animation, resource management, entity-component systems (ECS), memory allocators, multithreading, scripting, and asset pipelines. Graphics APIs like Vulkan, DirectX, and OpenGL are common, along with math like vectors, matrices, transformations, and collision detection.
-
-> Game engine developers often work with technologies found in engines like Unreal Engine, Unity, Godot, Source Engine, or custom engines. The field also overlaps with graphics programming, audio systems programming, physics simulation, networking, tools development, and performance optimization.
-
-- **[Awesome Game Engine Dev](https://github.com/stevinz/awesome-game-engine-dev)**
-- **[Awesome Game Engines](https://github.com/ChessMax/awesome-game-engines)**
-
----
-
-#### 8. Network Systems Programming
+#### 4. Network Systems Programming
 
 Network systems programming is about how computers talk to each other and exchange data over networks. Instead of building websites or user interfaces, you work on the systems underneath that let devices, servers, and apps send, receive, and process data efficiently. It's used in everything from web servers and cloud infrastructure to multiplayer games and distributed systems.
 
@@ -921,7 +928,7 @@ You'll commonly use C, C++, Rust, and Go. You'll work with sockets, TCP/IP, UDP,
 
 ---
 
-#### 9. Cybersecurity
+#### 5. Cybersecurity
 
 Cybersecurity is about protecting computer systems, networks, applications, and data from attacks, vulnerabilities, and unauthorized access. Instead of mainly building features for users, you learn how systems can be secured, how attackers find weaknesses, and how those weaknesses can be found and fixed.
 
@@ -935,6 +942,56 @@ You'll commonly work with Linux, Windows internals, C, C++, Python, Rust, and sc
 - **[OpenSecurityTraining2](https://opensecuritytraining.info/)**
 - **[Awesome Infosec](https://github.com/onlurking/awesome-infosec)**
 - **[Awesome List](https://github.com/0xor0ne/awesome-list)**
+
+---
+
+#### 6. GPGPU & Parallel Computing
+
+GPGPU (General-Purpose Computing on Graphics Processing Units) means using GPUs for more than drawing graphics. Instead of rendering images, you use the GPU for large calculations that can be split into thousands or even millions of small tasks running at the same time.
+
+You'll commonly work with CUDA, OpenCL, SYCL, HIP, and C++, and learn about parallel programming, threads, warps, kernels, shared memory, memory bandwidth, vectorized computation, and GPU architecture. The usual hardware is NVIDIA, AMD, and Intel GPUs, often paired with powerful CPUs.
+
+> GPGPU is widely used in scientific computing, physics simulations, machine learning, AI, image processing, financial modeling, and other work that needs a lot of computation. Since GPUs have many small cores running tasks in parallel, they can be much faster than CPUs for certain problems.
+
+- **[Awesome GPGPU](https://github.com/jslee02/awesome-gpgpu)**
+- **[Awesome GPU](https://github.com/Jokeren/Awesome-GPU)**
+
+---
+
+#### 7. Graphics Programming
+
+Graphics programming sits between programming, math, and GPU hardware. It covers creating and rendering visual content, from simple 2D graphics to realistic 3D worlds in games, simulations, VR, and visualization software. You'll learn how data turns into pixels on the screen and how GPUs render complex scenes efficiently.
+
+You'll commonly use C++ with graphics APIs like Vulkan, OpenGL, DirectX 12, and sometimes Metal. You'll come across rendering pipelines, vertex transformations, cameras, lighting, textures, materials, shadows, animation, rasterization, and ray tracing, and you'll write shaders in languages like GLSL and HLSL that run directly on the GPU.
+
+> Graphics programming leans heavily on math like linear algebra, vectors, matrices, transformations, and geometry. You'll work closely with GPUs from NVIDIA, AMD, and Intel, and learn how to speed up rendering and use graphics resources well. It's used in game engines, 3D modeling software, VR/AR apps, scientific visualization, CAD software, simulations, and modern user interfaces.
+
+- **[Awesome Graphics Programming](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9)**
+
+---
+
+#### 8. Game Engine Development
+
+Game engine development is one of the broadest areas in low-level programming because it mixes so many fields into one system. Instead of building a whole game, you build the technology games run on. An engine handles graphics, physics, audio, input, memory management, and plenty more, all working together.
+
+You'll mainly work with C++, and sometimes C#, Rust, or scripting languages like Lua. You'll come across rendering, physics, audio, animation, resource management, entity-component systems (ECS), memory allocators, multithreading, scripting, and asset pipelines. Graphics APIs like Vulkan, DirectX, and OpenGL are common, along with math like vectors, matrices, transformations, and collision detection.
+
+> Game engine developers often work with technologies found in engines like Unreal Engine, Unity, Godot, Source Engine, or custom engines. The field also overlaps with graphics programming, audio systems programming, physics simulation, networking, tools development, and performance optimization.
+
+- **[Awesome Game Engine Dev](https://github.com/stevinz/awesome-game-engine-dev)**
+- **[Awesome Game Engines](https://github.com/ChessMax/awesome-game-engines)**
+
+---
+
+#### 9. Audio Systems Programming
+
+Audio systems programming is about capturing, processing, and playing sound with software that has to keep up with the real world. Instead of building the buttons and menus of a music app, you work on the engine underneath, the code that keeps the speakers fed with samples on time, mixes many sounds together, applies effects, and talks to the sound hardware through the operating system.
+
+You'll commonly use C, C++, and Rust. You'll learn about digital audio basics like sample rate, bit depth, channels, and buffers, along with latency, real-time programming, digital signal processing (DSP), synthesis, mixing, and resampling. On the system side you'll work with audio APIs like ALSA, JACK, PipeWire, and PulseAudio on Linux, WASAPI and ASIO on Windows, and Core Audio on macOS.
+
+> The tech stack often includes libraries like PortAudio, miniaudio, RtAudio, and SDL, frameworks like JUCE, and plugin formats like VST3, Audio Units, CLAP, and LV2. It also overlaps with game engines, embedded systems like synthesizers and effects pedals, and operating system audio drivers.
+
+- **[Awesome Audio DSP](https://github.com/BillyDM/Awesome-Audio-DSP)**
 
 ---
 
