@@ -7,17 +7,9 @@ const REPO = {
 
 const MAX_SIDEBAR_TOC_LEVEL = 6;
 
-function getRepoFromQuery() {
-    return REPO;
-}
-
-function readmeRawBase(repo = REPO) {
-    return `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${repo.branch}/`;
-}
-
-function readmeBlobBase(repo = REPO) {
-    return `https://github.com/${repo.owner}/${repo.repo}/blob/${repo.branch}/`;
-}
+const getRepoFromQuery = () => REPO;
+const readmeRawBase = (repo = REPO) => `https://raw.githubusercontent.com/${repo.owner}/${repo.repo}/${repo.branch}/`;
+const readmeBlobBase = (repo = REPO) => `https://github.com/${repo.owner}/${repo.repo}/blob/${repo.branch}/`;
 
 async function fetchReadmeMarkdown(repo = REPO) {
     const res = await fetch(`${readmeRawBase(repo)}README.md?_=${Date.now()}`, { cache: "no-store" });
@@ -26,63 +18,49 @@ async function fetchReadmeMarkdown(repo = REPO) {
 }
 
 function slugifyHeading(text, seen) {
-    let slug = text
-        .toLowerCase()
-        .trim()
-        .replace(/[^\w\s-]/g, "")
-        .replace(/\s+/g, "-");
-    if (!slug) slug = "section";
-    if (seen.has(slug)) {
-        let i = 1;
-        while (seen.has(`${slug}-${i}`)) i++;
-        slug = `${slug}-${i}`;
-    }
+    const base = text.toLowerCase().trim().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-") || "section";
+    let slug = base;
+    for (let i = 1; seen.has(slug); i++) slug = `${base}-${i}`;
     seen.add(slug);
     return slug;
 }
 
-function buildTocTree(headingEls, maxLevel = MAX_SIDEBAR_TOC_LEVEL) {
-    const filtered = headingEls.filter((h) => Number(h.tagName[1]) <= maxLevel);
-    const items = filtered.length ? filtered.slice(1) : filtered;
+// Flat list of top-level sections (the first heading is the page title, so it's skipped).
+// Deeper headings under a section are intentionally left out of the sidebar.
+function buildTocItems(headingEls, maxLevel = MAX_SIDEBAR_TOC_LEVEL) {
+    const items = [];
+    let topLevel = Infinity;
 
-    const root = [];
-    const stack = [{ level: 0, children: root }];
+    headingEls
+        .filter((h) => Number(h.tagName[1]) <= maxLevel)
+        .slice(1)
+        .forEach((h) => {
+            const level = Number(h.tagName[1]);
+            if (level > topLevel) return;
+            topLevel = level;
+            items.push({
+                id: h.id,
+                text: h.textContent.replace(/^\d+\.\s*/, "").replace(/\s*[?!]+\s*$/, ""),
+            });
+        });
 
-    items.forEach((h) => {
-        const level = Number(h.tagName[1]);
-        const node = { id: h.id, text: h.textContent.replace(/^\d+\.\s*/, ""), children: [] };
-        while (stack.length > 1 && level <= stack[stack.length - 1].level) stack.pop();
-        stack[stack.length - 1].children.push(node);
-        stack.push({ level, children: node.children });
-    });
-
-    return root.map((node) => ({
-        id: node.id,
-        text: node.text.replace(/\s*[?!]+\s*$/, ""),
-        children: [],
-    }));
+    return items;
 }
 
-function renderTocTree(nodes, { linkPrefix = "", onNavigate = null } = {}) {
+function renderToc(items, { onNavigate = null } = {}) {
     const ul = document.createElement("ul");
 
-    nodes.forEach((node) => {
+    items.forEach((item) => {
         const li = document.createElement("li");
         li.className = "toc-node";
 
         const a = document.createElement("a");
-        a.href = `${linkPrefix}#${node.id}`;
-        a.textContent = node.text;
-        a.dataset.target = node.id;
+        a.href = `#${item.id}`;
+        a.textContent = item.text;
+        a.dataset.target = item.id;
         if (onNavigate) a.addEventListener("click", onNavigate);
+
         li.appendChild(a);
-
-        if (node.children.length) {
-            const childUl = renderTocTree(node.children, { linkPrefix, onNavigate });
-            childUl.className = "toc-children";
-            li.appendChild(childUl);
-        }
-
         ul.appendChild(li);
     });
 
@@ -95,18 +73,14 @@ function initPageChrome() {
     const navToggle = document.getElementById("navToggle");
     const scrim = document.getElementById("scrim");
 
-    function closeMobileSidebar() {
-        if (sidebarEl) sidebarEl.classList.remove("open");
-        if (scrim) scrim.classList.remove("show");
-        if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+    function setSidebar(open) {
+        sidebarEl?.classList.toggle("open", open);
+        scrim?.classList.toggle("show", open);
+        navToggle?.setAttribute("aria-expanded", String(open));
     }
 
-    if (navToggle && sidebarEl) {
-        navToggle.addEventListener("click", () => {
-            const open = sidebarEl.classList.toggle("open");
-            if (scrim) scrim.classList.toggle("show", open);
-            navToggle.setAttribute("aria-expanded", String(open));
-        });
-    }
-    return { closeMobileSidebar };
+    navToggle?.addEventListener("click", () => setSidebar(!sidebarEl.classList.contains("open")));
+    scrim?.addEventListener("click", () => setSidebar(false));
+
+    return { closeMobileSidebar: () => setSidebar(false) };
 }
