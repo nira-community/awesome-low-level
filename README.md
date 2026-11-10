@@ -56,7 +56,6 @@ A curated collection of resources for learning low-level programming from the gr
       - [Futhark](#futhark)
       - [Forth](#forth)
   - [8. Pick a Specialized Field](#8-pick-a-specialized-field)
-    - [Fields at a Glance](#fields-at-a-glance)
     - [Which Field to Pick ?](#which-field-to-pick-)
       - [Following the Language You Like](#following-the-language-you-like)
       - [Following How Close You Want to Be to Hardware](#following-how-close-you-want-to-be-to-hardware)
@@ -820,22 +819,6 @@ By now you should have a solid base in electronics, assembly, computer fundament
 There's no rush to specialize. Many beginners jump into advanced topics too early, before the fundamentals are solid, and end up struggling. A strong base makes the specialized topics much easier later on.
 
 > The fields below overlap a lot. A game engine developer touches graphics and audio, a compiler developer touches operating systems, and a security researcher touches almost everything. Think of them as starting points, not boxes.
-
-### Fields at a Glance
-
-Here's a quick overview before the details. Click a field name to jump to its section.
-
-| Field | What You Work On | Commonly Used Languages |
-| --- | --- | --- |
-| [Embedded Systems](#1-embedded-systems) | Software for microcontrollers and devices built to do specific jobs | C, C++, Rust |
-| [Operating Systems Development](#2-operating-systems-development) | The layer between applications and the hardware: kernels, drivers, schedulers | C, C++, Rust, Assembly |
-| [Compilers & Interpreters](#3-compilers--interpreters) | Tools that read programming languages and turn them into something a computer can run | C++, Rust, C, OCaml, Java |
-| [Network Systems Programming](#4-network-systems-programming) | The systems that let computers send, receive, and process data over networks | C, C++, Rust, Go |
-| [Cybersecurity](#5-cybersecurity) | Finding and fixing weaknesses in systems, networks, and software | C, C++, Python, Rust |
-| [GPGPU & Parallel Computing](#6-gpgpu--parallel-computing) | Using GPUs for large calculations split into many small parallel tasks | C++, CUDA, OpenCL, SYCL, HIP |
-| [Graphics Programming](#7-graphics-programming) | Turning data into pixels, from simple 2D to realistic 3D | C++, GLSL, HLSL |
-| [Game Engine Development](#8-game-engine-development) | The technology games run on: rendering, physics, audio, input | C++, C#, Rust, Lua |
-| [Audio Systems Programming](#9-audio-systems-programming) | Capturing, processing, and playing sound in real time | C, C++, Rust |
 
 ### Which Field to Pick ?
 
