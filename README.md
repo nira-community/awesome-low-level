@@ -704,14 +704,7 @@ Reading about concepts is important, but you only really understand them once yo
 
 If you're not sure what to build, here are a few ideas that fit this roadmap well:
 
-- A dynamic array (like a tiny `std::vector`) with `push`, `pop`, and automatic resizing
-- A hash table with your own hash function
-- A simple memory allocator built on top of one big block of memory
-- A hex dump tool, like a minimal `xxd`
-- A tiny shell that runs commands
-
-Here's a shell project you can try once the fundamentals feel comfortable. It doesn't have to be perfect, so just start building.
-
+- **[Project Based Tutorials in C](https://github.com/nCally/Project-Based-Tutorials-in-C)**
 - **[AMUNIX : Custom Unix Shell Guide](https://github.com/Cryogenicboom/Amunix/blob/main/docs/Part0.md)**
 
 ## 7. Learn Modern Low-Level Languages (Optional)
@@ -954,6 +947,7 @@ You'll commonly work with CUDA, OpenCL, SYCL, HIP, and C++, and learn about para
 > GPGPU is widely used in scientific computing, physics simulations, machine learning, AI, image processing, financial modeling, and other work that needs a lot of computation. Since GPUs have many small cores running tasks in parallel, they can be much faster than CPUs for certain problems.
 
 - **[Awesome GPGPU](https://github.com/jslee02/awesome-gpgpu)**
+- **[Before GPU Engineering](https://before-gpu-engineering.github.io/BEFORE-GPU-ENGINEERING/toc.html)**
 - **[Awesome GPU](https://github.com/Jokeren/Awesome-GPU)**
 
 ---
