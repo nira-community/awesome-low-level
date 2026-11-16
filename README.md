@@ -982,26 +982,49 @@ A collection of creators who cover topics related to low-level programming.
 - **[3Blue1Brown](https://youtube.com/@3blue1brown)**
 
 **A**
+- **[Acerola](https://www.youtube.com/@Acerola_t)**
 - **[Artful Bytes](https://www.youtube.com/@artfulbytes)**
 
 **C**
 - **[CakeZ](https://www.youtube.com/@Cakez77)**
+- **[Charles Cabergs](https://www.youtube.com/@cacharle)**
 - **[Code Guild](https://youtube.com/@code-guild)**
+- **[Code With Cypert](https://www.youtube.com/@CodeWithCypert)**
+- **[Coding Jesus](https://www.youtube.com/@CodingJesus)**
+- **[Coding with Tom](https://www.youtube.com/@CodingWithTom-tn7nl)**
 - **[Core Dumped](https://youtube.com/@coredumpped)**
 
 **D**
+- **[Daniel Hirsch](https://www.youtube.com/@HirschDaniel)**
+- **[Dave Churchill](https://www.youtube.com/@DaveChurchill)**
 - **[Dave's Garage](https://www.youtube.com/@DavesGarage)**
+- **[dustmite](https://www.youtube.com/@dustmite-c)**
+
+**E**
+- **[eisfrosch](https://www.youtube.com/@eisfrosch)**
+
+**F**
+- **[Freya Holmér](https://www.youtube.com/@FreyaHolmer)**
+
+**G**
+- **[gingerBill](https://www.youtube.com/@GingerGames)**
 
 **H**
 - **[hoff._world](https://www.youtube.com/@hoff._world)**
 
+**I**
+- **[Inigo Quilez](https://www.youtube.com/@InigoQuilez)**
+
 **J**
+- **[Jacob Sorber](https://www.youtube.com/@JacobSorber)**
 - **[javidx9](https://youtube.com/@javidx9)**
+- **[Jonathan Blow Clips](https://www.youtube.com/@JonathanBlowClips)**
 
 **K**
 - **[Kay Lack](https://www.youtube.com/@neoeno4242)**
 
 **L**
+- **[LaurieWired](https://www.youtube.com/@lauriewired)**
 - **[LiveOverflow](https://www.youtube.com/@LiveOverflow)**
 - **[Low Level](https://www.youtube.com/@LowLevelTV)**
 - **[Low Level Game Dev](https://www.youtube.com/@lowlevelgamedev9330)**
@@ -1011,9 +1034,14 @@ A collection of creators who cover topics related to low-level programming.
 
 **T**
 - **[TechExplained](https://www.youtube.com/@TechsExplained)**
+- **[The Coding Train](https://www.youtube.com/@TheCodingTrain)**
 - **[ThePrimeTimeagen](https://www.youtube.com/@ThePrimeTimeagen)**
 - **[tokyospliff](https://youtube.com/@tokyospliff)**
+- **[Travis Vroman](https://www.youtube.com/@TravisVroman/)**
 - **[Tsoding](https://www.youtube.com/@Tsoding)**
+
+**R**
+- **[rats159](https://www.youtube.com/@awesome.rats159)**
 
 ---
 
