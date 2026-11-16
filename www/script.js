@@ -132,6 +132,7 @@
             document.body.appendChild(wikiPreviewEl);
             wikiPreviewEl.addEventListener("mouseenter", () => clearTimeout(wikiHoverTimer));
             wikiPreviewEl.addEventListener("mouseleave", hideWikiPreview);
+
         }
         return wikiPreviewEl;
     }
